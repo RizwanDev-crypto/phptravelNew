@@ -169,17 +169,19 @@ export default function VisaSearchForm() {
         </Grid>
 
         {/* DATE */}
-        <Grid item xs={12} sm={3} width={295}>
+        <Grid item xs={12} sm={3} >
           <TextField
             fullWidth
             size="small"
             type="date"
+           
             value={checkInDate}
             onChange={(e) => setCheckInDate(e.target.value)}
             InputLabelProps={{ shrink: true }}
             sx={{
               "& .MuiInputBase-root": {
                 height: 40, // Height 40px
+                 width:{xs:"237px",lg:300 }
               },
             }}
             InputProps={{ 
@@ -199,6 +201,7 @@ export default function VisaSearchForm() {
             sx={{ 
               height: 40, // Height 40px
               minHeight: 40, // Ensure minimum height
+              width:{xs:"238px",lg:"40px"},
          pl:3
             }}
             startIcon={<Search />}

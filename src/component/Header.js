@@ -415,7 +415,7 @@ const Header = () => {
         }}
       >
         <Container
-          maxWidth="lg"
+          maxWidth={false} // Yeh change kiya - fixed width remove kardi
           sx={{
             px: { xs: 2, md: 12 },
             display: "flex",
@@ -431,71 +431,91 @@ const Header = () => {
               minHeight: { xs: 56, md: 64 },
               display: "flex",
               justifyContent: "space-between",
-              width: { xs: "100%", md: "90%" },
-              margin: "0",
-              padding: "0",
+              alignItems: "center",
+              width: "100%",
+              maxWidth: "910px", 
             }}
           >
-            {/* Logo */}
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "flex-start",
-              }}
-            >
-              <Box component={Link} href="/" sx={{ textDecoration: "none" }}>
-                <Box
-                  component="img"
-                  src="logo.png"
-                  alt="Logo"
-                  sx={{ width: 100, height: "auto", pr: "10px" }}
-                />
-              </Box>
+            {/* Logo aur Navigation */}
+           <Box
+  sx={{
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center", // Puri box ko center
+  }}
+>
+  {/* Logo aur Navigation ka combined container */}
+  <Box sx={{
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "6px", // Logo aur links ke darmiyan space
+  }}>
+    {/* Logo */}
+    <Box 
+      component={Link} 
+      href="/" 
+      sx={{ 
+        textDecoration: "none",
+        flexShrink: 0,
+      }}
+    >
+      <Box
+        component="img"
+        src="logo.png"
+        alt="Logo"
+        sx={{ 
+          width: 100, 
+          height: "auto",
+        }}
+      />
+    </Box>
 
-              {/*left Navigation */}
-              <Box
-                sx={{
-                  display: { xs: "none", lg: "flex" },
-                }}
-              >
-                <Box sx={{ display: "flex" }}>
-                  {navLinks.map((link, i) => (
-                    <Button
-                      key={i}
-                      component={Link}
-                      href={link.href}
-                      disableRipple={false}
-                      sx={{
-                        color: "#212529",
-                        minWidth: "auto",
-                        margin: 0,
-                        textTransform: "none",
-                        borderBottom: "3px solid transparent",
-                        borderRadius: 0,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: 300,
-                        fontSize: "11px",
-                        "&:hover": {
-                          color: "#0b66f9",
-                          borderBottom: "3px solid #0b66f9",
-                          py: "21px",
-                          backgroundColor: "transparent",
-                        },
-                      }}
-                    >
-                      {link.label}
-                    </Button>
-                  ))}
-                </Box>
-              </Box>
-            </Box>
-            {/* Right Navigation*/}
+    {/* Navigation Links - Logo ke right side */}
+    <Box
+      sx={{
+        display: { xs: "none",md:"flex", lg: "flex" },
+      }}
+    >
+      {navLinks.map((link, i) => (
+        <Button
+          key={i}
+          component={Link}
+          href={link.href}
+          disableRipple={false}
+          sx={{
+            color: "#212529",
+            minWidth: "auto",
+            margin: 0,
+            textTransform: "none",
+            borderBottom: "3px solid transparent",
+            borderRadius: 0,
+            fontFamily: "Inter, sans-serif",
+            fontWeight: 300,
+            fontSize: "11px",
+            "&:hover": {
+              color: "#0b66f9",
+              borderBottom: "3px solid #0b66f9",
+              py: "21px",
+              backgroundColor: "transparent",
+            },
+          }}
+        >
+          {link.label}
+        </Button>
+      ))}
+    </Box>
+  </Box>
+</Box>
+            
+            {/* Right Navigation */}
             <Box
               sx={{
-                display: { xs: "none", lg: "flex" },
+                display: { xs: "none",md:"flex", lg: "flex" },
                 alignItems: "center",
                 gap: "4px",
+                flex: 1, // Yeh add kiya
+                justifyContent: "flex-end", // Yeh add kiya
               }}
             >
               <LanguageDropdown
@@ -547,7 +567,7 @@ const Header = () => {
 
             {/* Mobile Menu */}
             <IconButton
-              sx={{ display: { lg: "none" }, color: "#212529" }}
+              sx={{ display: { lg: "none", md:"none" }, color: "#212529" }}
               onClick={() => setDrawerOpen(true)}
             >
               <MenuIcon />
@@ -556,13 +576,13 @@ const Header = () => {
         </Container>
       </AppBar>
 
-      {/* Mobile Drawer */}
+      {/* Mobile Drawer - No changes */}
       <Drawer
         anchor="right"
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
         sx={{
-          display: { lg: "none" },
+          display: { lg: "none", md:"none" },
         }}
       >
         <Box sx={{ width: 280, p: 2 }}>

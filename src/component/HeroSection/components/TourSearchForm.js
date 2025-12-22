@@ -119,7 +119,7 @@ const TourSearchForm = () => {
         // MOBILE LAYOUT - STACKED COLUMNS
         <Stack spacing={2}>
           {/* CITY SEARCH */}
-          <Box>
+          <Box sx={{width:"88%"}}>
             <TextField
               fullWidth
               size="small"
@@ -157,7 +157,7 @@ const TourSearchForm = () => {
               PaperProps={{ 
                 style: { 
                   maxHeight: 250,
-                  width: "90vw",
+
                   fontFamily: "'Inter', sans-serif",
                 } 
               }}
@@ -169,7 +169,7 @@ const TourSearchForm = () => {
                     onClick={() => handleCitySelect(city)}
                     sx={{ 
                       fontFamily: "'Inter', sans-serif",
-                      fontSize: "14px",
+                      fontSize: "12px",
                       py: 1.5,
                     }}
                   >
@@ -188,7 +188,7 @@ const TourSearchForm = () => {
           </Box>
 
           {/* CHECK-IN DATE */}
-          <Box>
+          <Box sx={{width:"88%"}}>
             <TextField
               fullWidth
               size="small"
@@ -220,7 +220,7 @@ const TourSearchForm = () => {
           </Box>
 
           {/* CHECK-OUT DATE */}
-          <Box>
+          <Box sx={{width:"88%"}}>
             <TextField
               fullWidth
               size="small"
@@ -252,7 +252,7 @@ const TourSearchForm = () => {
           </Box>
 
           {/* TRAVELLERS */}
-          <Box>
+          <Box sx={{width:"88%"}}>
             <Button
               fullWidth
               variant="outlined"
@@ -338,7 +338,7 @@ const TourSearchForm = () => {
           </Box>
 
           {/* SEARCH BUTTON - MOBILE */}
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Box sx={{ display: "flex", justifyContent: "center", width:"88%"}}>
             <Button
               variant="contained"
               color="primary"
@@ -401,6 +401,7 @@ const TourSearchForm = () => {
                 style: { 
                   maxHeight: 250,
                   fontFamily: "'Inter', sans-serif",
+                 
                 } 
               }}
             >

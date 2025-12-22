@@ -115,7 +115,7 @@ const SpecialCard = ({ title, subtitle, buttonText, width }) => {
   return (
     <Card
       sx={{
-        width: isMobile ? "100%" : "220px",
+        width: isMobile ? "90%" : "220px",
         overflow: "hidden",
         boxShadow: "0px 6px 20px rgba(0,0,0,0.08)",
         transition: "all 0.3s ease",

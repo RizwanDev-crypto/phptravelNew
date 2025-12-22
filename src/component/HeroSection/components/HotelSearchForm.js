@@ -11,9 +11,15 @@ import {
   Button,
   Stack,
   useMediaQuery,
-  useTheme 
+  useTheme,
+  FormControl,
+  OutlinedInput,
+  InputLabel,
+  Menu,
+  Typography
 } from "@mui/material";
 import { MapPin, Search } from "lucide-react";
+import { ExpandMore } from "@mui/icons-material";
 import TravellersDropdown from "./TravellersDropDown";
 
 // Sample countriesAirports data (replace with your full array)
@@ -41,6 +47,161 @@ const countriesAirports = [
   },
 ];
 
+// Custom CityDropdown Component
+const CityDropdown = ({ label, value, onChange }) => {
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+    setSearchTerm("");
+  };
+
+  // Flatten all cities
+  const allCities = countriesAirports.flatMap((country) =>
+    country.cities.map((city) => ({
+      ...city,
+      country: country.country,
+    }))
+  );
+
+  const selectedCity = allCities.find(c => `${c.city}, ${c.country}` === value);
+
+  const filteredCities = allCities.filter(
+    (city) =>
+      city.city.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      city.country.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      city.code.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const handleSelect = (city) => {
+    onChange(`${city.city}, ${city.country}`);
+    handleClose();
+  };
+
+  return (
+    <>
+      <FormControl fullWidth variant="outlined" size="small">
+        <OutlinedInput
+          value={value || ""}
+          onClick={handleClick}
+          readOnly
+          startAdornment={
+            <InputAdornment position="start">
+              <MapPin size={18} />
+            </InputAdornment>
+          }
+          endAdornment={
+            <InputAdornment position="end">
+              <ExpandMore 
+                sx={{ 
+                  fontSize: 16,
+                  transform: anchorEl ? "rotate(180deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease",
+                  cursor: "pointer"
+                }}
+                onClick={handleClick}
+              />
+            </InputAdornment>
+          }
+          sx={{
+            height: 44,
+            fontSize: "14px",
+            cursor: "pointer",
+            "& .MuiOutlinedInput-notchedOutline": {
+              borderColor: "#c0c0c0",
+            },
+            "&:hover .MuiOutlinedInput-notchedOutline": {
+              borderColor: "#1976d2",
+            },
+            "&:hover": {
+              backgroundColor: "#f0f7ff",
+            },
+            "& input": {
+              cursor: "pointer",
+            },
+            fontFamily: "'Inter', sans-serif",
+          }}
+          placeholder={label}
+        />
+      </FormControl>
+
+      <Menu
+  anchorEl={anchorEl}
+  open={Boolean(anchorEl)}
+  onClose={handleClose}
+  disableScrollLock
+  PaperProps={{
+    sx: {
+      maxHeight: 200,
+      width: 270,
+      mt: 1,
+    },
+  }}
+>
+        {/* Search Input */}
+        <Box sx={{ p: 1 }}>
+          <TextField
+            fullWidth
+            size="small"
+            placeholder="Search city..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            sx={{
+
+              "& .MuiOutlinedInput-root": {
+                height: 26,
+               
+                fontSize: "12px",
+                fontFamily: "'Inter', sans-serif",
+              },
+            }}
+          />
+        </Box>
+
+        {/* City List */}
+        {filteredCities.length === 0 ? (
+          <MenuItem disabled sx={{ fontSize: "10px", py: 1, fontFamily: "'Inter', sans-serif" }}>
+            No cities found
+          </MenuItem>
+        ) : (
+          filteredCities.map((city) => (
+            <MenuItem
+              key={`${city.city}-${city.country}`}
+              onClick={() => handleSelect(city)}
+              sx={{
+                fontSize: "10px",
+                py: 1,
+                borderBottom: "1px solid #f0f0f0",
+                "&:last-child": {
+                  borderBottom: "none",
+                },
+                "&:hover": {
+                  backgroundColor: "#f0f7ff",
+                },
+                fontFamily: "'Inter', sans-serif",
+              }}
+            >
+              <Box>
+               <Typography fontWeight={700} sx={{ fontSize: "10px" }} fontFamily="'Inter', sans-serif">
+                  {city.city}, {city.country}
+                </Typography>
+                <Typography variant="caption" color="text.secondary" fontFamily="'Inter', sans-serif">
+                  {city.code} - {city.airport}
+                </Typography>
+              </Box>
+            </MenuItem>
+          ))
+        )}
+      </Menu>
+    </>
+  );
+};
+
 const HotelSearchForm = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -61,21 +222,6 @@ const HotelSearchForm = () => {
     setCheckOutDate(nextWeek.toISOString().split("T")[0]);
   }, []);
 
-  // Flatten all cities
-  const allCities = countriesAirports.flatMap((country) =>
-    country.cities.map((city) => ({
-      ...city,
-      country: country.country,
-    }))
-  );
-
-  // Filter cities by search
-  const filteredCities = allCities.filter(
-    (c) =>
-      c.city.toLowerCase().includes(citySearch.toLowerCase()) ||
-      c.country.toLowerCase().includes(citySearch.toLowerCase())
-  );
-
   return (
     <Box sx={{ 
       fontFamily: "'Inter', sans-serif",
@@ -86,50 +232,15 @@ const HotelSearchForm = () => {
         <Stack spacing={2}>
           {/* City Search */}
           <Box>
-            <TextField
+            <CityDropdown 
               label="Search by city"
-              size="small"
-              fullWidth
-              sx={{
-                "& .MuiInputBase-root": { 
-                  height: 44,
-                  fontSize: "14px",
-                  fontFamily: "'Inter', sans-serif",
-                },
-                "& .MuiInputLabel-root": { 
-                  fontSize: "14px", 
-                  fontFamily: "'Inter', sans-serif",
-                },
-              }}
               value={selectedCity ? `${selectedCity.city}, ${selectedCity.country}` : citySearch}
-              onChange={(e) => setCitySearch(e.target.value)}
-              select={filteredCities.length > 0}
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                    <MapPin size={18} />
-                  </InputAdornment>
-                ),
+              onChange={(value) => {
+                const city = countriesAirports.flatMap(c => c.cities).find(c => `${c.city}, ${c.country}` === value);
+                setSelectedCity(city);
+                setCitySearch(value);
               }}
-            >
-              {filteredCities.map((city, index) => (
-                <MenuItem 
-                  key={`${city.city}-${city.country}-${index}`}
-                  value={`${city.city}, ${city.country}`}
-                  onClick={() => {
-                    setSelectedCity(city);
-                    setCitySearch(`${city.city}, ${city.country}`);
-                  }}
-                  sx={{ 
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: "14px",
-                    py: 1.5,
-                  }}
-                >
-                  {city.city}, {city.country} ({city.code})
-                </MenuItem>
-              ))}
-            </TextField>
+            />
           </Box>
 
           {/* Check-In and Check-Out - Mobile Stacked */}
@@ -235,43 +346,20 @@ const HotelSearchForm = () => {
         </Stack>
       ) : (
         // DESKTOP LAYOUT - ORIGINAL GRID
-        <Grid container spacing={2} alignItems="center" margin={2} paddingTop={2} paddingBottom={2}>
+        <Grid container spacing={1} alignItems="center" margin={2} paddingTop={2} paddingBottom={2}>
           {/* City */}
           <Grid item xs={12} sm={4}>
-            <TextField
-              label="Search by city"
-              size="small"
-              sx={{
-                "& .MuiInputBase-root": { 
-                  height: 40,
-                  fontSize: "12px",
-                  fontFamily: "'Inter', sans-serif",
-                },
-                width: 270,
-                "& .MuiInputLabel-root": { 
-                  fontSize: "12px", 
-                  top: "3px",
-                  fontFamily: "'Inter', sans-serif",
-                },
-              }}
-              value={selectedCity ? `${selectedCity.city}, ${selectedCity.country}` : ""}
-              onChange={(e) => setCitySearch(e.target.value)}
-              select={filteredCities.length > 0}
-            >
-              {filteredCities.map((city, index) => (
-                <MenuItem 
-                  key={`${city.city}-${city.country}-${index}`}
-                  value={`${city.city}, ${city.country}`}
-                  onClick={() => {
-                    setSelectedCity(city);
-                    setCitySearch(`${city.city}, ${selectedCity.country}`);
-                  }}
-                  sx={{ fontFamily: "'Inter', sans-serif" }}
-                >
-                  {city.city}, {city.country} ({city.code})
-                </MenuItem>
-              ))}
-            </TextField>
+            <Box sx={{ width: 270 }}>
+              <CityDropdown 
+                label="Search by city"
+                value={selectedCity ? `${selectedCity.city}, ${selectedCity.country}` : citySearch}
+                onChange={(value) => {
+                  const city = countriesAirports.flatMap(c => c.cities).find(c => `${c.city}, ${c.country}` === value);
+                  setSelectedCity(city);
+                  setCitySearch(value);
+                }}
+              />
+            </Box>
           </Grid>
 
           {/* Check-In and Check-Out - Desktop Side by Side */}
@@ -345,7 +433,7 @@ const HotelSearchForm = () => {
                 fontFamily: "'Inter', sans-serif",
                 "& .MuiButton-root": {
                   height: 40,
-                     width: { xs: 189 , lg:160}, 
+                  width: { xs: 189 , lg:160}, 
                   fontSize: "12px",
                   fontFamily: "'Inter', sans-serif",
                 },
@@ -363,6 +451,7 @@ const HotelSearchForm = () => {
                 "&:hover": { backgroundColor: "#115293" },
                 width: "100%",
                 height: 40,
+                px:1,
                 borderRadius: 1,
                 fontFamily: "'Inter', sans-serif",
               }}

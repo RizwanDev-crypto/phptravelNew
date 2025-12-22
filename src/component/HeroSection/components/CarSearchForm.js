@@ -102,7 +102,7 @@ const AirportDropdown = ({ placeholder = "Flying From", value, onChange }) => {
         PaperProps={{ 
           style: { 
             maxHeight: 180, 
-            width: isMobile ? "90vw" : "240px",
+            width: isMobile ? "90vw" : "400px",
             fontFamily: "'Inter', sans-serif",
           } 
         }}
@@ -206,7 +206,7 @@ export default function CarSearchForm() {
     <Box sx={{ 
       width: "100%", 
       gap: 1, 
-      paddingY: 1,
+      paddingY: 0.5,
       fontFamily: "'Inter', sans-serif",
     }}>
       {/* ROW 1: FROM + TO (Full Width) */}
@@ -226,15 +226,16 @@ export default function CarSearchForm() {
         </Stack>
       ) : (
         // Desktop Layout - Grid
-        <Grid container  spacing={1} sx={{ p: 2}}>
-          <Grid   item xs={12} sm={6}>
+        <Grid container  spacing={2} sx={{ p: 2, pl:6 }}>
+          <Grid   item xs={12} sm={6} sx={{  width:"400px"}}>
             <AirportDropdown 
+
               placeholder="Flying From" 
               value={flyingFrom} 
               onChange={setFlyingFrom} 
             />
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} sx={{  width:"400px"}}>
             <AirportDropdown 
               placeholder="Destination To" 
               value={destinationTo}  
@@ -251,7 +252,7 @@ export default function CarSearchForm() {
           {/* Pick-Up Date */}
           <TextField
             fullWidth
-            size="small"
+            size="xs"
             type="date"
             label="Pick-Up Date"
             value={pickUpDate}
@@ -268,8 +269,8 @@ export default function CarSearchForm() {
             }}
             inputProps={{ 
               style: { 
-                fontSize: 14,
-                height: 44,
+                fontSize: 8,
+                height: 40,
                 fontFamily: "'Inter', sans-serif",
               }
             }}
@@ -289,14 +290,14 @@ export default function CarSearchForm() {
             }}
             sx={{
               "& .MuiInputBase-root": {
-                height: 44,
+                height: 40,
                 fontFamily: "'Inter', sans-serif",
               },
             }}
             inputProps={{ 
               style: { 
-                fontSize: 14,
-                height: 44,
+                fontSize: 12,
+                height: 0,
                 fontFamily: "'Inter', sans-serif",
               }
             }}
@@ -316,14 +317,14 @@ export default function CarSearchForm() {
             }}
             sx={{
               "& .MuiInputBase-root": {
-                height: 44,
+                height: 40,
                 fontFamily: "'Inter', sans-serif",
               },
             }}
             inputProps={{ 
               style: { 
-                fontSize: 14,
-                height: 44,
+                fontSize: 12,
+                height: 40,
                 fontFamily: "'Inter', sans-serif",
               }
             }}
@@ -343,14 +344,15 @@ export default function CarSearchForm() {
             }}
             sx={{
               "& .MuiInputBase-root": {
-                height: 44,
+                height: 40,
                 fontFamily: "'Inter', sans-serif",
+            
               },
             }}
             inputProps={{ 
               style: { 
-                fontSize: 14,
-                height: 44,
+                fontSize: 12,
+                height: 40,
                 fontFamily: "'Inter', sans-serif",
               }
             }}
@@ -376,18 +378,18 @@ export default function CarSearchForm() {
         </Stack>
       ) : (
         // Desktop Layout - Grid
-        <Grid container spacing={2} alignItems="center" sx={{ m: 2 }}>
+        <Grid container spacing={2} alignItems="center" sx={{ m: 1, pl:5 }}>
           <Grid item xs={12} sm={2}>
             <TextField
               fullWidth
-              size="small"
+              size="xs"
               type="date"
               label="Pick-Up Date"
               value={pickUpDate}
               onChange={(e) => setPickUpDate(e.target.value)}
               InputLabelProps={{ 
                 shrink: true,
-                style: { fontFamily: "'Inter', sans-serif" }
+                style: { fontFamily: "'Inter', sans-serif", fontsize:"8px" }
               }}
               sx={{
                 "& .MuiInputBase-root": {
