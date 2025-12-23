@@ -53,7 +53,7 @@ const SpecialCard = ({ image, subtitle, buttonText }) => {
   return (
     <Card
       sx={{
-        width: "210px",
+        width: {xs:"350px",md:"210px", lg:"210px"},
         borderRadius: "5px",
         overflow: "hidden",
         boxShadow: "0px 6px 20px rgba(0,0,0,0.08)",
@@ -159,7 +159,7 @@ const CarCard = ({ image, price, title, location, rating }) => {
   return (
     <Box
       sx={{
-        width: "210px",
+              width: {xs:"350px",md:"210px", lg:"210px"},
         cursor: "pointer",
         display: "flex",
         flexDirection: "column",
@@ -170,11 +170,13 @@ const CarCard = ({ image, price, title, location, rating }) => {
       <Box
         sx={{
           position: "relative",
-          width: "100%",
-          height: "150px",
+          width: {xs:"100%", lg:"100%"},
+          
+          height: {xs:"95%", lg:"90%"},
           overflow: "hidden",
           borderRadius: "12px",
           border: "1px solid #e0e0e0",
+
         }}
       >
         <CardMedia

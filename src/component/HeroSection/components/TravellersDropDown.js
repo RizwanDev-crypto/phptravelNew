@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useTheme, useMediaQuery } from "@mui/material";
+
 import {
   Popper,
   IconButton,
@@ -10,9 +12,9 @@ import {
   Select,
   MenuItem,
   FormControl,
-  Grid,
   Paper,
 } from "@mui/material";
+
 import { People, Add, Remove, ExpandMore, Close } from "@mui/icons-material";
 
 /* ===== Countries Array ===== */
@@ -32,9 +34,17 @@ export default function TravellersDropdown({ travellers, onTravellersChange }) {
   const [nationality, setNationality] = useState("Pakistan");
   const [childAges, setChildAges] = useState([0]);
 
+  /* ===== Responsive Breakpoints ===== */
+  const theme = useTheme();
+  const isMobileM = useMediaQuery("(min-width: 360px) and (max-width: 414px)");
+  const isMobileL = useMediaQuery("(min-width: 415px) and (max-width: 600px)");
+
   useEffect(() => {
     if (travellers.children > childAges.length) {
-      setChildAges((prev) => [...prev, ...Array(travellers.children - prev.length).fill(0)]);
+      setChildAges((prev) => [
+        ...prev,
+        ...Array(travellers.children - prev.length).fill(0),
+      ]);
     } else if (travellers.children < childAges.length) {
       setChildAges((prev) => prev.slice(0, travellers.children));
     }
@@ -73,10 +83,9 @@ export default function TravellersDropdown({ travellers, onTravellersChange }) {
 
   return (
     <>
-      {/* Trigger Button */}
+      {/* ===== Trigger Button ===== */}
       <Button
         variant="outlined"
-        fullWidth
         size="small"
         onClick={(e) => setAnchorEl(anchorEl ? null : e.currentTarget)}
         startIcon={<People sx={{ fontSize: 16 }} />}
@@ -85,12 +94,18 @@ export default function TravellersDropdown({ travellers, onTravellersChange }) {
           height: 40,
           fontSize: "12px",
           color: "#000",
-          width: { xs: 238, md:170, lg:160}, 
+
+          width: isMobileL
+            ? 344
+            : isMobileM
+            ? 290
+            : { xs: 238, md: 170, lg: 160 },
+
           borderColor: "#c0c0c0",
           justifyContent: "space-between",
           textTransform: "none",
           px: 1.5,
-          fontFamily: "'Inter', sans-serif", // Inter font added
+          fontFamily: "'Inter', sans-serif",
           "&:hover": {
             borderColor: "#1976d2",
             backgroundColor: "#f0f7ff",
@@ -100,47 +115,27 @@ export default function TravellersDropdown({ travellers, onTravellersChange }) {
         {displayText.toLowerCase()}
       </Button>
 
-      {/* Popper */}
+      {/* ===== Popper ===== */}
       <Popper
         open={open}
         anchorEl={anchorEl}
         placement="bottom-start"
         disablePortal
-        modifiers={[
-          {
-            name: "offset",
-            options: { offset: [0, 6] },
-          },
-        ]}
+        modifiers={[{ name: "offset", options: { offset: [0, 6] } }]}
         sx={{ zIndex: 1200 }}
       >
-        <Paper 
-          sx={{ 
-            p: 2, 
-            width: 210, 
-            borderRadius: 1,
-            fontFamily: "'Inter', sans-serif", // Inter font added
-          }}
-        >
+        <Paper sx={{ p: 2, width: 210, borderRadius: 1 }}>
           {/* Header */}
           <Box display="flex" justifyContent="space-between" mb={1}>
-            <Typography sx={{ 
-              fontSize: 12, 
-              fontWeight: 600,
-              fontFamily: "'Inter', sans-serif", // Inter font added
-            }}>
+            <Typography fontSize={12} fontWeight={600}>
               Travellers
             </Typography>
-            <IconButton 
-              size="small" 
-              onClick={() => setAnchorEl(null)}
-              sx={{ fontFamily: "'Inter', sans-serif" }} // Inter font added
-            >
+            <IconButton size="small" onClick={() => setAnchorEl(null)}>
               <Close fontSize="small" />
             </IconButton>
           </Box>
 
-          {/* Adults / Children / Infants */}
+          {/* Travellers Controls */}
           {[
             { key: "adults", label: "Adults", sub: "12+ years", max: 9 },
             { key: "children", label: "Children", sub: "2–11 years", max: 8 },
@@ -148,36 +143,25 @@ export default function TravellersDropdown({ travellers, onTravellersChange }) {
           ].map(({ key, label, sub, max }) => (
             <Box key={key} display="flex" justifyContent="space-between" mb={0.5}>
               <Box>
-                <Typography sx={{ 
-                  fontSize: 10,
-                  fontFamily: "'Inter', sans-serif", // Inter font added
-                }}>
-                  {label}
-                </Typography>
-                <Typography sx={{ 
-                  fontSize: 8, 
-                  color: "text.secondary",
-                  fontFamily: "'Inter', sans-serif", // Inter font added
-                }}>
+                <Typography fontSize={10}>{label}</Typography>
+                <Typography fontSize={8} color="text.secondary">
                   {sub}
                 </Typography>
               </Box>
+
               <Box display="flex" alignItems="center">
                 <IconButton
                   size="small"
                   disabled={travellers[key] <= (key === "adults" ? 1 : 0)}
                   onClick={() => handleTravellerChange(key, "decrement")}
-                  sx={{ fontFamily: "'Inter', sans-serif" }} // Inter font added
                 >
                   <Remove fontSize="small" />
                 </IconButton>
-                <Typography sx={{ 
-                  mx: 0.5, 
-                  fontSize: 10,
-                  fontFamily: "'Inter', sans-serif", // Inter font added
-                }}>
+
+                <Typography mx={0.5} fontSize={10}>
                   {travellers[key]}
                 </Typography>
+
                 <IconButton
                   size="small"
                   disabled={
@@ -186,7 +170,6 @@ export default function TravellersDropdown({ travellers, onTravellersChange }) {
                       travellers.infants >= travellers.adults)
                   }
                   onClick={() => handleTravellerChange(key, "increment")}
-                  sx={{ fontFamily: "'Inter', sans-serif" }} // Inter font added
                 >
                   <Add fontSize="small" />
                 </IconButton>
@@ -197,13 +180,10 @@ export default function TravellersDropdown({ travellers, onTravellersChange }) {
           {/* Child Ages */}
           {travellers.children > 0 && (
             <Box mt={1}>
-              <Typography sx={{ 
-                fontSize: 10, 
-                fontWeight: 600,
-                fontFamily: "'Inter', sans-serif", // Inter font added
-              }}>
+              <Typography fontSize={10} fontWeight={600}>
                 Child Ages
               </Typography>
+
               {childAges.map((age, i) => (
                 <FormControl fullWidth size="small" key={i} sx={{ mt: 0.5 }}>
                   <Select
@@ -215,21 +195,10 @@ export default function TravellersDropdown({ travellers, onTravellersChange }) {
                         )
                       )
                     }
-                    sx={{ 
-                      fontSize: 10, 
-                      height: 26,
-                      fontFamily: "'Inter', sans-serif", // Inter font added
-                    }}
+                    sx={{ fontSize: 10, height: 26 }}
                   >
                     {ageOptions.map((opt) => (
-                      <MenuItem 
-                        key={opt} 
-                        value={opt} 
-                        sx={{ 
-                          fontSize: 10,
-                          fontFamily: "'Inter', sans-serif", // Inter font added
-                        }}
-                      >
+                      <MenuItem key={opt} value={opt} sx={{ fontSize: 10 }}>
                         {opt} years
                       </MenuItem>
                     ))}
@@ -241,32 +210,18 @@ export default function TravellersDropdown({ travellers, onTravellersChange }) {
 
           {/* Nationality */}
           <Box mt={1.5}>
-            <Typography sx={{ 
-              fontSize: 10, 
-              fontWeight: 600,
-              fontFamily: "'Inter', sans-serif", // Inter font added
-            }}>
+            <Typography fontSize={10} fontWeight={600}>
               Nationality
             </Typography>
+
             <FormControl fullWidth size="small">
               <Select
                 value={nationality}
                 onChange={(e) => setNationality(e.target.value)}
-                sx={{ 
-                  fontSize: 10, 
-                  height: 28,
-                  fontFamily: "'Inter', sans-serif", // Inter font added
-                }}
+                sx={{ fontSize: 10, height: 28 }}
               >
                 {countries.map((c) => (
-                  <MenuItem 
-                    key={c} 
-                    value={c} 
-                    sx={{ 
-                      fontSize: 10,
-                      fontFamily: "'Inter', sans-serif", // Inter font added
-                    }}
-                  >
+                  <MenuItem key={c} value={c} sx={{ fontSize: 10 }}>
                     {c}
                   </MenuItem>
                 ))}

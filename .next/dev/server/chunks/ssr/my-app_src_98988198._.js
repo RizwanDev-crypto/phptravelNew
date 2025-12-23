@@ -2226,6 +2226,8 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-app/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-app/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$styles$2f$useTheme$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__ = __turbopack_context__.i("[project]/node_modules/@mui/material/esm/styles/useTheme.js [app-ssr] (ecmascript) <export default as useTheme>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__ = __turbopack_context__.i("[project]/node_modules/@mui/material/esm/useMediaQuery/index.js [app-ssr] (ecmascript) <export default as useMediaQuery>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Popper$2f$Popper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Popper$3e$__ = __turbopack_context__.i("[project]/node_modules/@mui/material/esm/Popper/Popper.js [app-ssr] (ecmascript) <export default as Popper>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$IconButton$2f$IconButton$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconButton$3e$__ = __turbopack_context__.i("[project]/node_modules/@mui/material/esm/IconButton/IconButton.js [app-ssr] (ecmascript) <export default as IconButton>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__ = __turbopack_context__.i("[project]/node_modules/@mui/material/esm/Typography/Typography.js [app-ssr] (ecmascript) <export default as Typography>");
@@ -2241,6 +2243,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ExpandMore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/ExpandMore.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Close$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/Close.js [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -2306,6 +2309,9 @@ function TravellersDropdown({ travellers, onTravellersChange }) {
     const [childAges, setChildAges] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([
         0
     ]);
+    /* ===== Responsive Breakpoints ===== */ const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$styles$2f$useTheme$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__["useTheme"])();
+    const isMobileM = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"])("(min-width: 360px) and (max-width: 414px)");
+    const isMobileL = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"])("(min-width: 415px) and (max-width: 600px)");
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if (travellers.children > childAges.length) {
             setChildAges((prev)=>[
@@ -2343,7 +2349,6 @@ function TravellersDropdown({ travellers, onTravellersChange }) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
                 variant: "outlined",
-                fullWidth: true,
                 size: "small",
                 onClick: (e)=>setAnchorEl(anchorEl ? null : e.currentTarget),
                 startIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$People$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -2352,7 +2357,7 @@ function TravellersDropdown({ travellers, onTravellersChange }) {
                     }
                 }, void 0, false, {
                     fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                    lineNumber: 82,
+                    lineNumber: 91,
                     columnNumber: 20
                 }, void 0),
                 endIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ExpandMore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -2361,14 +2366,14 @@ function TravellersDropdown({ travellers, onTravellersChange }) {
                     }
                 }, void 0, false, {
                     fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                    lineNumber: 83,
+                    lineNumber: 92,
                     columnNumber: 18
                 }, void 0),
                 sx: {
                     height: 40,
                     fontSize: "12px",
                     color: "#000",
-                    width: {
+                    width: isMobileL ? 344 : isMobileM ? 290 : {
                         xs: 238,
                         md: 170,
                         lg: 160
@@ -2386,7 +2391,7 @@ function TravellersDropdown({ travellers, onTravellersChange }) {
                 children: displayText.toLowerCase()
             }, void 0, false, {
                 fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                lineNumber: 77,
+                lineNumber: 87,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Popper$2f$Popper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Popper$3e$__["Popper"], {
@@ -2412,8 +2417,7 @@ function TravellersDropdown({ travellers, onTravellersChange }) {
                     sx: {
                         p: 2,
                         width: 210,
-                        borderRadius: 1,
-                        fontFamily: "'Inter', sans-serif"
+                        borderRadius: 1
                     },
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -2422,39 +2426,33 @@ function TravellersDropdown({ travellers, onTravellersChange }) {
                             mb: 1,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                    sx: {
-                                        fontSize: 12,
-                                        fontWeight: 600,
-                                        fontFamily: "'Inter', sans-serif"
-                                    },
+                                    fontSize: 12,
+                                    fontWeight: 600,
                                     children: "Travellers"
                                 }, void 0, false, {
                                     fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                    lineNumber: 127,
+                                    lineNumber: 130,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$IconButton$2f$IconButton$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconButton$3e$__["IconButton"], {
                                     size: "small",
                                     onClick: ()=>setAnchorEl(null),
-                                    sx: {
-                                        fontFamily: "'Inter', sans-serif"
-                                    },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Close$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         fontSize: "small"
                                     }, void 0, false, {
                                         fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                        lineNumber: 139,
+                                        lineNumber: 134,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                    lineNumber: 134,
+                                    lineNumber: 133,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                            lineNumber: 126,
+                            lineNumber: 129,
                             columnNumber: 11
                         }, this),
                         [
@@ -2484,32 +2482,26 @@ function TravellersDropdown({ travellers, onTravellersChange }) {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                                sx: {
-                                                    fontSize: 10,
-                                                    fontFamily: "'Inter', sans-serif"
-                                                },
+                                                fontSize: 10,
                                                 children: label
                                             }, void 0, false, {
                                                 fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                                lineNumber: 151,
+                                                lineNumber: 146,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                                sx: {
-                                                    fontSize: 8,
-                                                    color: "text.secondary",
-                                                    fontFamily: "'Inter', sans-serif"
-                                                },
+                                                fontSize: 8,
+                                                color: "text.secondary",
                                                 children: sub
                                             }, void 0, false, {
                                                 fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                                lineNumber: 157,
+                                                lineNumber: 147,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                        lineNumber: 150,
+                                        lineNumber: 145,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -2520,77 +2512,65 @@ function TravellersDropdown({ travellers, onTravellersChange }) {
                                                 size: "small",
                                                 disabled: travellers[key] <= (key === "adults" ? 1 : 0),
                                                 onClick: ()=>handleTravellerChange(key, "decrement"),
-                                                sx: {
-                                                    fontFamily: "'Inter', sans-serif"
-                                                },
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Remove$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                     fontSize: "small"
                                                 }, void 0, false, {
                                                     fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                                    lineNumber: 172,
+                                                    lineNumber: 158,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                                lineNumber: 166,
+                                                lineNumber: 153,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                                sx: {
-                                                    mx: 0.5,
-                                                    fontSize: 10,
-                                                    fontFamily: "'Inter', sans-serif"
-                                                },
+                                                mx: 0.5,
+                                                fontSize: 10,
                                                 children: travellers[key]
                                             }, void 0, false, {
                                                 fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                                lineNumber: 174,
+                                                lineNumber: 161,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$IconButton$2f$IconButton$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconButton$3e$__["IconButton"], {
                                                 size: "small",
                                                 disabled: travellers[key] >= max || key === "infants" && travellers.infants >= travellers.adults,
                                                 onClick: ()=>handleTravellerChange(key, "increment"),
-                                                sx: {
-                                                    fontFamily: "'Inter', sans-serif"
-                                                },
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Add$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                     fontSize: "small"
                                                 }, void 0, false, {
                                                     fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                                    lineNumber: 191,
+                                                    lineNumber: 174,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                                lineNumber: 181,
+                                                lineNumber: 165,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                        lineNumber: 165,
+                                        lineNumber: 152,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, key, true, {
                                 fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                lineNumber: 149,
+                                lineNumber: 144,
                                 columnNumber: 13
                             }, this)),
                         travellers.children > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                             mt: 1,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                    sx: {
-                                        fontSize: 10,
-                                        fontWeight: 600,
-                                        fontFamily: "'Inter', sans-serif"
-                                    },
+                                    fontSize: 10,
+                                    fontWeight: 600,
                                     children: "Child Ages"
                                 }, void 0, false, {
                                     fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                    lineNumber: 200,
+                                    lineNumber: 183,
                                     columnNumber: 15
                                 }, this),
                                 childAges.map((age, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$FormControl$2f$FormControl$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FormControl$3e$__["FormControl"], {
@@ -2604,14 +2584,12 @@ function TravellersDropdown({ travellers, onTravellersChange }) {
                                             onChange: (e)=>setChildAges((prev)=>prev.map((a, idx)=>idx === i ? e.target.value : a)),
                                             sx: {
                                                 fontSize: 10,
-                                                height: 26,
-                                                fontFamily: "'Inter', sans-serif"
+                                                height: 26
                                             },
                                             children: ageOptions.map((opt)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$MenuItem$2f$MenuItem$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MenuItem$3e$__["MenuItem"], {
                                                     value: opt,
                                                     sx: {
-                                                        fontSize: 10,
-                                                        fontFamily: "'Inter', sans-serif"
+                                                        fontSize: 10
                                                     },
                                                     children: [
                                                         opt,
@@ -2619,38 +2597,35 @@ function TravellersDropdown({ travellers, onTravellersChange }) {
                                                     ]
                                                 }, opt, true, {
                                                     fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                                    lineNumber: 225,
+                                                    lineNumber: 201,
                                                     columnNumber: 23
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                            lineNumber: 209,
+                                            lineNumber: 189,
                                             columnNumber: 19
                                         }, this)
                                     }, i, false, {
                                         fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                        lineNumber: 208,
+                                        lineNumber: 188,
                                         columnNumber: 17
                                     }, this))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                            lineNumber: 199,
+                            lineNumber: 182,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                             mt: 1.5,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                    sx: {
-                                        fontSize: 10,
-                                        fontWeight: 600,
-                                        fontFamily: "'Inter', sans-serif"
-                                    },
+                                    fontSize: 10,
+                                    fontWeight: 600,
                                     children: "Nationality"
                                 }, void 0, false, {
                                     fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                    lineNumber: 244,
+                                    lineNumber: 213,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$FormControl$2f$FormControl$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FormControl$3e$__["FormControl"], {
@@ -2661,46 +2636,44 @@ function TravellersDropdown({ travellers, onTravellersChange }) {
                                         onChange: (e)=>setNationality(e.target.value),
                                         sx: {
                                             fontSize: 10,
-                                            height: 28,
-                                            fontFamily: "'Inter', sans-serif"
+                                            height: 28
                                         },
                                         children: countries.map((c)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$MenuItem$2f$MenuItem$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MenuItem$3e$__["MenuItem"], {
                                                 value: c,
                                                 sx: {
-                                                    fontSize: 10,
-                                                    fontFamily: "'Inter', sans-serif"
+                                                    fontSize: 10
                                                 },
                                                 children: c
                                             }, c, false, {
                                                 fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                                lineNumber: 262,
+                                                lineNumber: 224,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                        lineNumber: 252,
+                                        lineNumber: 218,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                                    lineNumber: 251,
+                                    lineNumber: 217,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                            lineNumber: 243,
+                            lineNumber: 212,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                    lineNumber: 117,
+                    lineNumber: 127,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/my-app/src/component/HeroSection/components/TravellersDropDown.js",
-                lineNumber: 104,
+                lineNumber: 119,
                 columnNumber: 7
             }, this)
         ]
@@ -3243,7 +3216,7 @@ function FlightSearchForm() {
                                         md: "absolute"
                                     },
                                     left: {
-                                        xs: "40%",
+                                        xs: "45%",
                                         md: "50%"
                                     },
                                     top: {
@@ -3341,7 +3314,7 @@ function FlightSearchForm() {
                                     }, void 0, false, {
                                         fileName: "[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js",
                                         lineNumber: 364,
-                                        columnNumber: 13
+                                        columnNumber: 3
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$OutlinedInput$2f$OutlinedInput$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__OutlinedInput$3e$__["OutlinedInput"], {
                                         type: "date",
@@ -3356,6 +3329,12 @@ function FlightSearchForm() {
                                         },
                                         sx: {
                                             height: 40,
+                                            /* 🔥 REMOVE DATE ICON */ "& input::-webkit-calendar-picker-indicator": {
+                                                display: "none"
+                                            },
+                                            "& input::-webkit-inner-spin-button": {
+                                                display: "none"
+                                            },
                                             "& .MuiOutlinedInput-notchedOutline": {
                                                 borderColor: "#c0c0c0"
                                             },
@@ -3369,14 +3348,14 @@ function FlightSearchForm() {
                                         label: "Depart Date"
                                     }, void 0, false, {
                                         fileName: "[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js",
-                                        lineNumber: 367,
-                                        columnNumber: 13
+                                        lineNumber: 368,
+                                        columnNumber: 3
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js",
                                 lineNumber: 363,
-                                columnNumber: 11
+                                columnNumber: 8
                             }, this),
                             selectedTripType === "return" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$FormControl$2f$FormControl$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FormControl$3e$__["FormControl"], {
                                 fullWidth: true,
@@ -3395,7 +3374,7 @@ function FlightSearchForm() {
                                         children: "Return Date"
                                     }, void 0, false, {
                                         fileName: "[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js",
-                                        lineNumber: 397,
+                                        lineNumber: 408,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$OutlinedInput$2f$OutlinedInput$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__OutlinedInput$3e$__["OutlinedInput"], {
@@ -3424,13 +3403,13 @@ function FlightSearchForm() {
                                         label: "Return Date"
                                     }, void 0, false, {
                                         fileName: "[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js",
-                                        lineNumber: 400,
+                                        lineNumber: 411,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js",
-                                lineNumber: 396,
+                                lineNumber: 407,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -3464,12 +3443,12 @@ function FlightSearchForm() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js",
-                            lineNumber: 431,
+                            lineNumber: 442,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js",
-                        lineNumber: 430,
+                        lineNumber: 441,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Grid$2f$Grid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -3487,7 +3466,7 @@ function FlightSearchForm() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js",
-                                lineNumber: 456,
+                                lineNumber: 467,
                                 columnNumber: 24
                             }, void 0),
                             sx: {
@@ -3509,12 +3488,12 @@ function FlightSearchForm() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js",
-                            lineNumber: 453,
+                            lineNumber: 464,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js",
-                        lineNumber: 452,
+                        lineNumber: 463,
                         columnNumber: 9
                     }, this)
                 ]
@@ -6515,8 +6494,8 @@ function VisaSearchForm() {
                             minHeight: 40,
                             width: {
                                 xs: "238px",
-                                md: "120px",
-                                lg: "40px"
+                                md: "40px",
+                                lg: "60px"
                             },
                             pl: 3
                         },
@@ -6813,7 +6792,11 @@ const flights = [
 const FlightCard = ({ fromCity, fromCountry, toCity, price })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Paper$2f$Paper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Paper$3e$__["Paper"], {
         sx: {
-            width: "260px",
+            width: {
+                xs: "280px",
+                md: "200px",
+                lg: "260px"
+            },
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
@@ -6986,6 +6969,7 @@ const FeaturedFlights = ()=>{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            justifyContent: "center",
             fontFamily: "'Inter', sans-serif"
         },
         children: [
@@ -7005,7 +6989,7 @@ const FeaturedFlights = ()=>{
                         children: "Featured Flights"
                     }, void 0, false, {
                         fileName: "[project]/my-app/src/component/FeaturedSection/FeaturedFlights.js",
-                        lineNumber: 124,
+                        lineNumber: 126,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -7017,13 +7001,13 @@ const FeaturedFlights = ()=>{
                         children: "These alluring destinations are picked just for you."
                     }, void 0, false, {
                         fileName: "[project]/my-app/src/component/FeaturedSection/FeaturedFlights.js",
-                        lineNumber: 127,
+                        lineNumber: 129,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/my-app/src/component/FeaturedSection/FeaturedFlights.js",
-                lineNumber: 117,
+                lineNumber: 119,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             flights.map((row, rowIndex)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Grid$2f$Grid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -7040,17 +7024,17 @@ const FeaturedFlights = ()=>{
                                 ...flight
                             }, void 0, false, {
                                 fileName: "[project]/my-app/src/component/FeaturedSection/FeaturedFlights.js",
-                                lineNumber: 142,
+                                lineNumber: 144,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0))
                         }, `${rowIndex}-${colIndex}`, false, {
                             fileName: "[project]/my-app/src/component/FeaturedSection/FeaturedFlights.js",
-                            lineNumber: 141,
+                            lineNumber: 143,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)))
                 }, rowIndex, false, {
                     fileName: "[project]/my-app/src/component/FeaturedSection/FeaturedFlights.js",
-                    lineNumber: 134,
+                    lineNumber: 136,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)))
         ]
@@ -8200,7 +8184,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
 ====================== */ const SpecialCard = ({ image, subtitle, buttonText })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Card$2f$Card$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Card$3e$__["Card"], {
         sx: {
-            width: "210px",
+            width: {
+                xs: "350px",
+                md: "210px",
+                lg: "210px"
+            },
             borderRadius: "5px",
             overflow: "hidden",
             boxShadow: "0px 6px 20px rgba(0,0,0,0.08)",
@@ -8324,7 +8312,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
 ====================== */ const CarCard = ({ image, price, title, location, rating })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
-            width: "210px",
+            width: {
+                xs: "350px",
+                md: "210px",
+                lg: "210px"
+            },
             cursor: "pointer",
             display: "flex",
             flexDirection: "column",
@@ -8334,8 +8326,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     position: "relative",
-                    width: "100%",
-                    height: "150px",
+                    width: {
+                        xs: "100%",
+                        lg: "100%"
+                    },
+                    height: {
+                        xs: "95%",
+                        lg: "90%"
+                    },
                     overflow: "hidden",
                     borderRadius: "12px",
                     border: "1px solid #e0e0e0"
@@ -8352,7 +8350,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
                     }
                 }, void 0, false, {
                     fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                    lineNumber: 180,
+                    lineNumber: 182,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
@@ -8385,7 +8383,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
                                 children: title
                             }, void 0, false, {
                                 fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                                lineNumber: 205,
+                                lineNumber: 207,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -8407,17 +8405,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
                                             }
                                         }, index, false, {
                                             fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                                            lineNumber: 221,
+                                            lineNumber: 223,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)))
                                 }, void 0, false, {
                                     fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                                    lineNumber: 219,
+                                    lineNumber: 221,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                                lineNumber: 218,
+                                lineNumber: 220,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -8429,13 +8427,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
                                 children: location
                             }, void 0, false, {
                                 fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                                lineNumber: 232,
+                                lineNumber: 234,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                        lineNumber: 204,
+                        lineNumber: 206,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -8455,7 +8453,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
                                 children: price
                             }, void 0, false, {
                                 fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                                lineNumber: 251,
+                                lineNumber: 253,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -8470,19 +8468,19 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
                                 children: "Book Now"
                             }, void 0, false, {
                                 fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                                lineNumber: 262,
+                                lineNumber: 264,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                        lineNumber: 244,
+                        lineNumber: 246,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                lineNumber: 194,
+                lineNumber: 196,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
@@ -8519,12 +8517,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
                     children: "Recommended Transfer Cars"
                 }, void 0, false, {
                     fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                    lineNumber: 300,
+                    lineNumber: 302,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                lineNumber: 293,
+                lineNumber: 295,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Grid$2f$Grid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -8540,29 +8538,29 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
                             ...car
                         }, void 0, false, {
                             fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                            lineNumber: 309,
+                            lineNumber: 311,
                             columnNumber: 15
                         }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(CarCard, {
                             ...car
                         }, void 0, false, {
                             fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                            lineNumber: 311,
+                            lineNumber: 313,
                             columnNumber: 15
                         }, ("TURBOPACK compile-time value", void 0))
                     }, index, false, {
                         fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                        lineNumber: 307,
+                        lineNumber: 309,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)))
             }, void 0, false, {
                 fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-                lineNumber: 305,
+                lineNumber: 307,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/my-app/src/component/FeaturedSection/RecommendedCars.js",
-        lineNumber: 285,
+        lineNumber: 287,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

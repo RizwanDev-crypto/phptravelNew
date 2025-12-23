@@ -36,7 +36,7 @@ const FlightCard = ({ fromCity, fromCountry, toCity, price }) => {
   return (
     <Paper
       sx={{
-        width: "260px",
+        width: {xs:"280px",md:"200px" ,lg:"260px"},
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
@@ -111,7 +111,9 @@ const FeaturedFlights = () => {
         display: "flex", 
         flexDirection: "column", 
         alignItems: "center",
+        justifyContent:"center",
         fontFamily: "'Inter', sans-serif", // Inter font added
+      
       }}
     >
       <Box

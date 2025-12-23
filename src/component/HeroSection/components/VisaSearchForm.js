@@ -201,7 +201,7 @@ export default function VisaSearchForm() {
             sx={{ 
               height: 40, // Height 40px
               minHeight: 40, // Ensure minimum height
-              width:{xs:"238px", md:"120px",lg:"40px"},
+              width:{xs:"238px", md:"40px",lg:"60px"},
          pl:3
             }}
             startIcon={<Search />}

@@ -323,7 +323,7 @@ export default function FlightSearchForm() {
 
               /* Position */
               position: { xs: "relative", md: "absolute" },
-              left: { xs: "40%", md: "50%" },
+              left: { xs: "45%", md: "50%" },
               top: { md: "5px" },
               transform: { md: "translateX(-50%)" },
               marginTop: { xs: "-10px", md: 0 },
@@ -360,36 +360,47 @@ export default function FlightSearchForm() {
           }}
         >
           {/* Depart Date */}
-          <FormControl fullWidth variant="outlined" size="small">
-            <InputLabel shrink sx={{ fontSize: "12px", top: "-3px" }}>
-              Depart Date
-            </InputLabel>
-            <OutlinedInput
-              type="date"
-              value={departDate}
-              onChange={(e) => setDepartDate(e.target.value)}
-              inputProps={{
-                style: {
-                  height: 40,
-                  padding: "0 8px",
-                  fontSize: "12px",
-                },
-              }}
-              sx={{
-                height: 40,
-                "& .MuiOutlinedInput-notchedOutline": {
-                  borderColor: "#c0c0c0",
-                },
-                "&:hover .MuiOutlinedInput-notchedOutline": {
-                  borderColor: "#1976d2",
-                },
-                "&:hover": {
-                  backgroundColor: "#f0f7ff",
-                },
-              }}
-              label="Depart Date"
-            />
-          </FormControl>
+       <FormControl fullWidth variant="outlined" size="small">
+  <InputLabel shrink sx={{ fontSize: "12px", top: "-3px" }}>
+    Depart Date
+  </InputLabel>
+
+  <OutlinedInput
+    type="date"
+    value={departDate}
+    onChange={(e) => setDepartDate(e.target.value)}
+    inputProps={{
+      style: {
+        height: 40,
+        padding: "0 8px",
+        fontSize: "12px",
+      },
+    }}
+    sx={{
+      height: 40,
+
+      /* 🔥 REMOVE DATE ICON */
+      "& input::-webkit-calendar-picker-indicator": {
+        display: "none",
+      },
+      "& input::-webkit-inner-spin-button": {
+        display: "none",
+      },
+
+      "& .MuiOutlinedInput-notchedOutline": {
+        borderColor: "#c0c0c0",
+      },
+      "&:hover .MuiOutlinedInput-notchedOutline": {
+        borderColor: "#1976d2",
+      },
+      "&:hover": {
+        backgroundColor: "#f0f7ff",
+      },
+    }}
+    label="Depart Date"
+  />
+</FormControl>
+
 
           {/* Return Date (only on Return trip) */}
           {selectedTripType === "return" && (
