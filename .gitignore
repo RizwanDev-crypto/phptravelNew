@@ -1,9 +1,29 @@
-# Check if .gitignore exists and has correct content
-cat .gitignore
+# Dependencies
+node_modules/
 
-# Agar sahi nahi hai to update karein
-"node_modules/" | Out-File .gitignore -Encoding UTF8
-".next/" | Out-File .gitignore -Encoding UTF8 -Append
-".env*" | Out-File .gitignore -Encoding UTF8 -Append
-"*.log" | Out-File .gitignore -Encoding UTF8 -Append
-node_modules
+# Next.js build output
+.next/
+out/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Optional cache
+.cache/
+git rm -r --cached .next

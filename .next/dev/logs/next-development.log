@@ -1,25 +1,23 @@
-[00:00:10.845] Server  LOG      ✓ Ready in 6.2s
-[00:00:26.767] Server  LOG      ○ Compiling / ...
-[00:00:41.416] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+[00:00:05.527] Server  LOG      ✓ Ready in 3s
+[00:00:19.253] Server  LOG      ○ Compiling / ...
+[00:00:26.769] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
 
-[00:00:41.419] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+[00:00:26.772] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
 
-[00:00:41.421] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+[00:00:26.773] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
 
-[00:00:41.571] Server  ERROR   `value` prop on `input` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components.
-[00:00:41.626] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+[00:00:26.915] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
 
-[00:00:45.270] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:46.196] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+[00:00:29.494] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:30.424] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
 
-[00:00:46.197] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+[00:00:30.425] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
 
-[00:00:46.197] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+[00:00:30.425] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
 
-[00:00:46.448] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:00:46.448] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+[00:00:30.541] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
 
-[00:00:47.114] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:31.054] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -57,2846 +55,311 @@ It can also happen if the client has a browser extension installed which messes 
                             >
                   ...
 
-[00:00:47.114] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:03:14.473] Server  LOG      ✓ Compiled in 517ms
-[00:03:15.456] Browser ERROR   uncaughtError: ReferenceError: md is not defined
-[00:03:15.537] Server  LOG      ✓ Compiled in 223ms
-[00:03:16.456] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:358:24
+[00:01:22.144] Server  LOG      ✓ Compiled in 115ms
+[00:01:34.434] Server  LOG      ✓ Compiled in 140ms
+[00:01:35.485] Browser ERROR   ./my-app/src/component/FeaturedSection/AppStore.js:158:25
 Parsing ecmascript source code failed
-  356 |     width: { xs: "100%", md: 230 },
-  357 |     flexDirection: { xs: "column", md: "row" } ,
-> 358 |       mt:{xs:"5px", md:}
-      |                        ^
-  359 |   }}
-  360 | >
-  361 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:03:16.968] Server  LOG      ✓ Compiled in 48ms
-[00:03:17.460] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:358:25
-Parsing ecmascript source code failed
-  356 |     width: { xs: "100%", md: 230 },
-  357 |     flexDirection: { xs: "column", md: "row" } ,
-> 358 |       mt:{xs:"5px", md:5p}
+  156 |         flex: 1,
+  157 |         width: isMobile ? "100%" : "auto",
+> 158 |         mt: isMobile ?  : 0,
       |                         ^
-  359 |   }}
-  360 | >
-  361 |
-
-Expected '</', got 'p'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:03:18.427] Server  LOG      ✓ Compiled in 60ms
-[00:03:19.449] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:358:24
-Parsing ecmascript source code failed
-  356 |     width: { xs: "100%", md: 230 },
-  357 |     flexDirection: { xs: "column", md: "row" } ,
-> 358 |       mt:{xs:"5px", md:}
-      |                        ^
-  359 |   }}
-  360 | >
-  361 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:03:19.696] Server  LOG      ✓ Compiled in 82ms
-[00:03:19.699] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:03:21.060] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:03:21.062] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:03:21.064] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:03:21.575] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:03:24.178] Server  LOG      ✓ Compiled in 239ms
-[00:03:24.643] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:26.079] Browser ERROR   uncaughtError: Error: Could not parse module '[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js'
-
-Expected '</', got 'px'
-[00:03:48.722] Server  LOG      ✓ Compiled in 148ms
-[00:03:48.734] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:03:48.737] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./my-app/src/component/HeroSection/components/FlightSearchForm.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:03:50.812] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:03:50.815] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:03:50.818] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:03:51.154] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:03:52.831] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:03:54.059] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:03:54.062] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:03:54.065] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:03:54.738] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:03:56.184] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:03:56.185] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./my-app/src/component/HeroSection/components/FlightSearchForm.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:03:56.187] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:03:56.189] Server  LOG      ✓ Compiled in 0ms
-[00:03:56.249] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:03:56.253] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./my-app/src/component/HeroSection/components/FlightSearchForm.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:03:56.256] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:03:57.360] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:03:57.362] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:03:57.365] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:03:57.677] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:03:58.811] Server  LOG      ✓ Compiled in 2ms
-[00:04:01.120] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:01.976] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:04:01.976] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:04:01.976] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:04:01.976] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:04:01.976] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:04:02.639] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:04:10.402] Server  LOG      ✓ Compiled in 1220ms
-[00:04:28.003] Server  LOG      ✓ Compiled in 98ms
-[00:04:47.780] Server  LOG      ✓ Compiled in 714ms
-[00:04:48.450] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:358:20
-Parsing ecmascript source code failed
-  356 |     width: { xs: "100%", md: 230 },
-  357 |     flexDirection: { xs: "column", md: "row" } ,
-> 358 |       mt:{xs:"5px",=}
-      |                    ^
-  359 |   }}
-  360 | >
-  361 |
-
-Expected '</', got '='
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:04:49.001] Server  LOG      ✓ Compiled in 151ms
-[00:04:52.414] Server  LOG      ✓ Compiled in 76ms
-[00:04:58.668] Server  LOG      ✓ Compiled in 93ms
-[00:05:06.043] Server  LOG      ✓ Compiled in 58ms
-[00:05:08.797] Server  LOG      ✓ Compiled in 109ms
-[00:05:18.282] Server  LOG      ✓ Compiled in 70ms
-[00:05:50.732] Server  LOG      ✓ Compiled in 59ms
-[00:05:56.708] Server  LOG      ✓ Compiled in 57ms
-[00:06:58.018] Server  LOG      ✓ Compiled in 133ms
-[00:07:04.534] Server  LOG      ✓ Compiled in 43ms
-[00:07:05.848] Server  LOG      ✓ Compiled in 47ms
-[00:07:13.971] Server  LOG      ✓ Compiled in 39ms
-[00:07:18.228] Server  LOG      ✓ Compiled in 36ms
-[00:09:16.786] Server  LOG      ✓ Compiled in 54ms
-[00:09:18.339] Server  LOG      ✓ Compiled in 55ms
-[00:09:26.552] Server  LOG      ✓ Compiled in 39ms
-[00:09:42.387] Server  LOG      ✓ Compiled in 58ms
-[00:09:43.456] Browser ERROR   uncaughtError: ReferenceError: font is not defined
-[00:09:44.642] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:09:44.662] Server  LOG      ✓ Compiled in 54ms
-[00:09:45.781] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:09:45.782] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:09:45.784] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:09:45.945] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\my-app_src_98988198._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:09:45.952] Server  ERROR    ⨯ ReferenceError: fontSize is not defined
-[00:09:46.038] Browser ERROR   uncaughtError: ReferenceError: fontSize is not defined
-[00:09:46.950] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:47.802] Server  LOG      ✓ Compiled in 87ms
-[00:09:48.179] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:126:21
-Parsing ecmascript source code failed
-  124 |             width: 200,
-  125 |             mt: 1,
-> 126 |             fontSize"
-      |                     ^
-  127 |           }
-  128 |         }}
-  129 |       >
-
-Unterminated string constant
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:09:48.179] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:126:21
-Parsing ecmascript source code failed
-  124 |             width: 200,
-  125 |             mt: 1,
-> 126 |             fontSize"
-      |                     ^
-  127 |           }
-  128 |         }}
-  129 |       >
-
-Unterminated string constant
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:09:48.179] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:09:48.179] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:09:48.179] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:09:48.179] Browser ERROR   uncaughtError: ReferenceError: fontSize is not defined
-[00:09:48.179] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:126:21
-Parsing ecmascript source code failed
-  124 |             width: 200,
-  125 |             mt: 1,
-> 126 |             fontSize"
-      |                     ^
-  127 |           }
-  128 |         }}
-  129 |       >
-
-Unterminated string constant
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:09:48.195] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:09:48.503] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\my-app_src_98988198._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:09:48.505] Server  ERROR    ⨯ ReferenceError: fontSize is not defined
-[00:09:49.135] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:51.453] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:127:11
-Parsing ecmascript source code failed
-  125 |             mt: 1,
-  126 |             fontSize:
-> 127 |           }
-      |           ^
-  128 |         }}
-  129 |       >
-  130 |         {/* Search Input */}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:09:51.453] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:127:11
-Parsing ecmascript source code failed
-  125 |             mt: 1,
-  126 |             fontSize:
-> 127 |           }
-      |           ^
-  128 |         }}
-  129 |       >
-  130 |         {/* Search Input */}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:09:51.453] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:127:11
-Parsing ecmascript source code failed
-  125 |             mt: 1,
-  126 |             fontSize:
-> 127 |           }
-      |           ^
-  128 |         }}
-  129 |       >
-  130 |         {/* Search Input */}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:09:51.453] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:09:51.453] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:09:51.453] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:09:51.453] Browser ERROR   uncaughtError: ReferenceError: fontSize is not defined
-[00:09:52.158] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:09:52.957] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:09:52.960] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:09:52.961] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:09:53.166] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:09:54.064] Server  LOG      ✓ Compiled in 45ms
-[00:09:55.013] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:55.479] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:09:55.479] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:09:55.479] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:09:55.652] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:09:55.652] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:09:56.367] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="/my-app/sr...">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
-                        <RootLayout params={Promise}>
-                          <html lang="en">
-                            <body
-                              sx={{Margin:0,Padding:0}}
--                             data-new-gr-c-s-check-loaded="14.1267.0"
--                             data-gr-ext-installed=""
-                            >
-                  ...
-
-[00:09:56.368] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:10:07.632] Server  LOG      ✓ Compiled in 65ms
-[00:10:08.447] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:127:11
-Parsing ecmascript source code failed
-  125 |             mt: 1,
-  126 |             fontSize:
-> 127 |           }
-      |           ^
-  128 |         }}
-  129 |       >
-  130 |         {/* Search Input */}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:10:16.276] Server  LOG      ✓ Compiled in 53ms
-[00:10:23.329] Server  LOG      ✓ Compiled in 41ms
-[00:10:30.135] Server  LOG      ✓ Compiled in 61ms
-[00:10:30.462] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:126:23
-Parsing ecmascript source code failed
-  124 |             width: 200,
-  125 |             mt: 1,
-> 126 |             fontSize:2px
-      |                       ^^
-  127 |           }
-  128 |         }}
-  129 |       >
-
-Expected '</', got 'px'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:10:32.676] Server  LOG      ✓ Compiled in 52ms
-[00:10:33.446] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:127:11
-Parsing ecmascript source code failed
-  125 |             mt: 1,
-  126 |             fontSize:
-> 127 |           }
-      |           ^
-  128 |         }}
-  129 |       >
-  130 |         {/* Search Input */}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:10:37.120] Server  LOG      ✓ Compiled in 57ms
-[00:10:49.187] Server  LOG      ✓ Compiled in 46ms
-[00:10:57.917] Server  LOG      ✓ Compiled in 47ms
-[00:11:06.530] Server  LOG      ✓ Compiled in 62ms
-[00:11:33.126] Server  LOG      ✓ Compiled in 144ms
-[00:11:42.087] Server  LOG      ✓ Compiled in 44ms
-[00:11:44.722] Server  LOG      ✓ Compiled in 71ms
-[00:11:52.771] Server  LOG      ✓ Compiled in 61ms
-[00:11:53.449] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:125:17
-Parsing ecmascript source code failed
-  123 |             maxHeight: 200,
-  124 |             width: 200,
-> 125 |             mt: ,
-      |                 ^
-  126 |            
-  127 |           }
-  128 |         }}
-
-Expected '</', got ','
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:12:00.696] Server  LOG      ✓ Compiled in 83ms
-[00:12:01.455] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:125:17
-Parsing ecmascript source code failed
-  123 |             maxHeight: 200,
-  124 |             width: 200,
-> 125 |             mt: ,
-      |                 ^
-  126 |            
-  127 |           }
-  128 |         }}
-
-Expected '</', got ','
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:12:10.421] Server  LOG      ✓ Compiled in 57ms
-[00:12:24.490] Server  LOG      ✓ Compiled in 86ms
-[00:12:25.452] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:125:19
-Parsing ecmascript source code failed
-  123 |             maxHeight: 200,
-  124 |             width: 200,
-> 125 |             mt: 1,]
-      |                   ^
-  126 |            
-  127 |           }
-  128 |         }}
-
-Expected '</', got ']'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:12:30.460] Server  LOG      ✓ Compiled in 64ms
-[00:12:30.462] Browser ERROR   uncaughtError: ReferenceError: fontSize is not defined
-[00:12:31.445] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:128:11
-Parsing ecmascript source code failed
-  126 |             fontSize:
-  127 |            
-> 128 |           }
-      |           ^
-  129 |         }}
-  130 |       >
-  131 |         {/* Search Input */}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:12:31.917] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:12:33.474] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:12:33.477] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:12:33.478] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:12:33.731] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:12:35.783] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:36.708] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:12:36.709] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:12:36.709] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:12:36.965] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:12:36.965] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:12:38.094] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="/my-app/sr...">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
-                        <RootLayout params={Promise}>
-                          <html lang="en">
-                            <body
-                              sx={{Margin:0,Padding:0}}
--                             data-new-gr-c-s-check-loaded="14.1267.0"
--                             data-gr-ext-installed=""
-                            >
-                  ...
-
-[00:12:38.094] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:12:54.443] Server  LOG      ✓ Compiled in 69ms
-[00:12:55.450] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:126:13
-Parsing ecmascript source code failed
-  124 |             width: 200,
-  125 |             mt: 1,
-> 126 |             =
-      |             ^
-  127 |            
-  128 |           }
-  129 |         }}
-
-Expected '</', got '='
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:13:14.600] Server  LOG      ✓ Compiled in 53ms
-[00:13:15.648] Server  LOG      ✓ Compiled in 36ms
-[00:13:29.649] Server  LOG      ✓ Compiled in 49ms
-[00:15:06.641] Server  LOG      ✓ Compiled in 42ms
-[00:15:21.099] Server  LOG      ✓ Compiled in 61ms
-[00:15:41.058] Server  LOG      ✓ Compiled in 96ms
-[00:15:44.048] Server  LOG      ✓ Compiled in 41ms
-[00:15:50.426] Server  LOG      ✓ Compiled in 74ms
-[00:15:51.452] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:171:61
-Parsing ecmascript source code failed
-  169 |             >
-  170 |               <Box>
-> 171 |                 <Typography  fontWeight={500} sx={{fontSize:}}>
-      |                                                             ^
-  172 |                   {airport.city} ({airport.code})
-  173 |                 </Typography>
-  174 |                 <Typography variant="caption" color="text.secondary">
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:15:54.447] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:171:61
-Parsing ecmascript source code failed
-  169 |             >
-  170 |               <Box>
-> 171 |                 <Typography  fontWeight={500} sx={{fontSize:}}>
-      |                                                             ^
-  172 |                   {airport.city} ({airport.code})
-  173 |                 </Typography>
-  174 |                 <Typography variant="caption" color="text.secondary">
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:16:09.648] Server  LOG      ✓ Compiled in 56ms
-[00:16:11.976] Server  LOG      ✓ Compiled in 91ms
-[00:16:19.670] Server  LOG      ✓ Compiled in 49ms
-[00:16:26.870] Server  LOG      ✓ Compiled in 37ms
-[00:16:32.161] Server  LOG      ✓ Compiled in 35ms
-[00:16:40.450] Server  LOG      ✓ Compiled in 53ms
-[00:17:43.683] Server  LOG      ✓ Compiled in 41ms
-[00:17:45.304] Server  LOG      ✓ Compiled in 54ms
-[00:23:07.567] Server  LOG      ✓ Compiled in 2.8s
-[00:30:28.288] Server  LOG      ✓ Compiled in 800ms
-[00:31:13.236] Server  LOG      ✓ Compiled in 3s
-[00:31:14.973] Server  LOG      ✓ Compiled in 243ms
-[00:32:45.315] Server  LOG      ✓ Compiled in 369ms
-[00:33:28.585] Server  LOG      ✓ Compiled in 165ms
-[00:33:29.455] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:117:1
-Parsing ecmascript source code failed
-  115 |       </FormControl>
-  116 | <Menu
-> 117 | <Menu
-      | ^
-  118 |   anchorEl={anchorEl}
-  119 |   open={Boolean(anchorEl)}
-  120 |   onClose={handleClose}
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:33:31.451] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:117:1
-Parsing ecmascript source code failed
-  115 |       </FormControl>
-  116 | <Menu
-> 117 | <Menu
-      | ^
-  118 |   anchorEl={anchorEl}
-  119 |   open={Boolean(anchorEl)}
-  120 |   onClose={handleClose}
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:33:35.402] Server  LOG      ✓ Compiled in 71ms
-[00:33:36.451] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:125:9
-Parsing ecmascript source code failed
-  123 |
-  124 |
-> 125 |     sx: {
-      |         ^
-  126 |       maxHeight: 200,
-  127 |       width: 200,
-  128 |       mt: 1,
-
-Expected '</', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:33:41.560] Server  LOG      ✓ Compiled in 170ms
-[00:34:05.739] Server  LOG      ✓ Compiled in 93ms
-[00:34:18.948] Server  LOG      ✓ Compiled in 101ms
-[00:35:56.986] Server  LOG      ✓ Compiled in 163ms
-[00:36:01.035] Server  LOG      ✓ Compiled in 52ms
-[00:36:46.478] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:36:46.480] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:36:46.483] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:36:46.753] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:36:48.669] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:49.526] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:36:49.526] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:36:49.526] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:36:49.653] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:37:24.331] Server  LOG      ✓ Compiled in 124ms
-[00:37:26.205] Server  LOG      ✓ Compiled in 130ms
-[00:37:27.453] Browser ERROR   uncaughtError: ReferenceError: left is not defined
-[00:37:29.810] Server  LOG      ✓ Compiled in 183ms
-[00:37:30.451] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:136:11
-Parsing ecmascript source code failed
-  134 |       width: 200,
-  135 |       mt: 1,
-> 136 |       left"
-      |           ^
-  137 |     },
-  138 |   }}
-  139 | >
-
-Unterminated string constant
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:37:32.599] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:37:32.608] Server  LOG      ✓ Compiled in 115ms
-[00:37:33.758] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:37:33.761] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:37:33.763] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:37:33.895] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\my-app_src_98988198._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:37:33.900] Server  ERROR    ⨯ ReferenceError: left is not defined
-[00:37:33.966] Browser ERROR   uncaughtError: ReferenceError: left is not defined
-[00:37:34.041] Server  LOG      ✓ Compiled in 23ms
-[00:37:34.827] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:37:35.462] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:137:5
-Parsing ecmascript source code failed
-  135 |       mt: 1,
-  136 |       left:
-> 137 |     },
-      |     ^
-  138 |   }}
-  139 | >
-  140 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:37:35.462] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:137:5
-Parsing ecmascript source code failed
-  135 |       mt: 1,
-  136 |       left:
-> 137 |     },
-      |     ^
-  138 |   }}
-  139 | >
-  140 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:37:35.462] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:137:5
-Parsing ecmascript source code failed
-  135 |       mt: 1,
-  136 |       left:
-> 137 |     },
-      |     ^
-  138 |   }}
-  139 | >
-  140 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:37:35.462] Browser ERROR   uncaughtError: Error: Could not parse module '[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js'
-
-Expected '</', got '}'
-[00:37:35.667] Server  LOG      ✓ Compiled in 68ms
-[00:37:36.462] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:137:5
-Parsing ecmascript source code failed
-  135 |       mt: 1,
-  136 |       left:-
-> 137 |     },
-      |     ^
-  138 |   }}
-  139 | >
-  140 |
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:37:37.245] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:37:37.246] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./my-app/src/component/HeroSection/components/FlightSearchForm.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:37:37.247] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:37:37.259] Server  LOG      ✓ Compiled in 88ms
-[00:37:38.295] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:37:38.299] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:37:38.302] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:37:38.514] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:37:40.010] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:37:41.066] Server  LOG      ✓ Compiled in 49ms
-[00:37:41.454] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:37:41.455] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:37:41.455] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:37:41.455] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:38:03.089] Server  LOG      ✓ Compiled in 70ms
-[00:38:12.788] Server  LOG      ✓ Compiled in 46ms
-[00:38:17.711] Server  LOG      ✓ Compiled in 90ms
-[00:38:18.449] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:136:13
-Parsing ecmascript source code failed
-  134 |       width: 200,
-  135 |       mt: 1,
-> 136 |       left:-30px
-      |             ^^
-  137 |     },
-  138 |   }}
-  139 | >
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:38:18.449] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:136:15
-Parsing ecmascript source code failed
-  134 |       width: 200,
-  135 |       mt: 1,
-> 136 |       left:-30px
-      |               ^
-  137 |     },
-  138 |   }}
-  139 | >
-
-Identifier cannot follow number
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:38:29.693] Server  LOG      ✓ Compiled in 59ms
-[00:38:31.577] Server  LOG      ✓ Compiled in 60ms
-[00:38:37.987] Server  LOG      ✓ Compiled in 59ms
-[00:38:43.389] Server  LOG      ✓ Compiled in 84ms
-[00:38:49.918] Server  LOG      ✓ Compiled in 45ms
-[00:38:52.838] Server  LOG      ✓ Compiled in 44ms
-[00:38:54.935] Server  LOG      ✓ Compiled in 35ms
-[00:38:56.192] Server  LOG      ✓ Compiled in 74ms
-[00:39:12.455] Server  LOG      ✓ Compiled in 43ms
-[00:39:30.337] Server  LOG      ✓ Compiled in 73ms
-[00:39:30.456] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:195:9
-Parsing ecmascript source code failed
-  193 |           ))
-  194 |         )}
-> 195 |       </Menu>
-      |         ^^^^
-  196 |     </>
-  197 |   );
-  198 | };
-
-Expected '>', got 'Menu'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:39:52.446] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:195:9
-Parsing ecmascript source code failed
-  193 |           ))
-  194 |         )}
-> 195 |       </Menu>
-      |         ^^^^
-  196 |     </>
-  197 |   );
-  198 | };
-
-Expected '>', got 'Menu'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:39:59.146] Server  LOG      ✓ Compiled in 124ms
-[00:40:35.756] Server  LOG      ✓ Compiled in 61ms
-[00:40:37.513] Server  LOG      ✓ Compiled in 88ms
-[00:40:38.454] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:195:9
-Parsing ecmascript source code failed
-  193 |           ))
-  194 |         )}
-> 195 |       </Menu>
-      |         ^^^^
-  196 |     </>
-  197 |   );
-  198 | };
-
-Expected '>', got 'Menu'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:40:41.415] Server  LOG      ✓ Compiled in 57ms
-[00:40:42.460] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:195:14
-Parsing ecmascript source code failed
-  193 |           ))
-  194 |         )}
-> 195 |       </Menu>
-      |              ^
-> 196 |     </>
-      | ^^^^^
-  197 |   );
-  198 | };
-  199 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:40:48.455] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:195:14
-Parsing ecmascript source code failed
-  193 |           ))
-  194 |         )}
-> 195 |       </Menu>
-      |              ^
-> 196 |     </>
-      | ^^^^^
-  197 |   );
-  198 | };
-  199 | </Popover>
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:40:51.454] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:195:14
-Parsing ecmascript source code failed
-  193 |           ))
-  194 |         )}
-> 195 |       </Menu>
-      |              ^
-> 196 |     </>
-      | ^^^^^
-  197 |   );
-  198 | };
-  199 | </Popover>
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:41:14.461] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:195:14
-Parsing ecmascript source code failed
-  193 |           ))
-  194 |         )}
-> 195 |       </Menu>
-      |              ^
-> 196 |     </>
-      | ^^^^^
-  197 |   );
-  198 | };
-  199 | </Popover>
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:41:19.445] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:195:14
-Parsing ecmascript source code failed
-  193 |           ))
-  194 |         )}
-> 195 |       </Menu>
-      |              ^
-> 196 |     </>
-      | ^^^^^
-  197 |   );
-  198 | };
-  199 | </Popover>
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:41:20.312] Server  LOG      ✓ Compiled in 50ms
-[00:41:20.453] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:195:9
-Parsing ecmascript source code failed
-  193 |           ))
-  194 |         )}
-> 195 |       </Menu>
-      |         ^^^^
-  196 |     </>
-  197 |   );
-  198 | };
-
-Expected '>', got 'Menu'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:43:22.928] Server  LOG      ✓ Compiled in 2.3s
-[00:43:36.099] Server  LOG      ✓ Compiled in 445ms
-[00:47:06.177] Server  LOG      ✓ Compiled in 2.6s
-[00:47:17.720] Server  LOG      ✓ Compiled in 519ms
-[00:47:24.872] Server  LOG      ✓ Compiled in 217ms
-[00:49:08.417] Server  LOG      ✓ Compiled in 165ms
-[00:49:32.032] Server  LOG      ✓ Compiled in 958ms
-[00:51:07.948] Server  LOG      ✓ Compiled in 59ms
-[00:51:09.463] Browser ERROR   uncaughtError: ReferenceError: re is not defined
-[00:51:10.184] Server  LOG      ✓ Compiled in 174ms
-[00:51:10.451] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:136:15
-Parsing ecmascript source code failed
-  134 |       width: 200,
-  135 |       mt: 1,
-> 136 |      position::
-      |               ^
-  137 |     },
-  138 |   }}
-  139 | >
+  159 |       }}>
+  160 |         <Box
+  161 |           sx={{
 
 Expected '</', got ':'
 
 Import traces:
   Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/component/FeaturedSection/AppStore.js [Client Component Browser]
     ./my-app/src/app/page.js [Client Component Browser]
     ./my-app/src/app/page.js [Server Component]
 
   Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/component/FeaturedSection/AppStore.js [Client Component SSR]
     ./my-app/src/app/page.js [Client Component SSR]
     ./my-app/src/app/page.js [Server Component]
-[00:51:11.890] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:51:11.892] Server  LOG      ✓ Compiled in 107ms
-[00:51:14.792] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:51:14.795] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:51:14.797] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:51:15.023] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:51:16.149] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:51:17.673] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:51:17.974] Server  LOG      ✓ Compiled in 41ms
-[00:51:19.460] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:51:19.460] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:51:19.460] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:51:19.460] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:51:19.535] Server  LOG      ✓ Compiled in 47ms
-[00:51:20.446] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="/my-app/sr...">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
-                        <RootLayout params={Promise}>
-                          <html lang="en">
-                            <body
-                              sx={{Margin:0,Padding:0}}
--                             data-new-gr-c-s-check-loaded="14.1267.0"
--                             data-gr-ext-installed=""
-                            >
-                  ...
-
-[00:51:22.893] Server  LOG      ✓ Compiled in 76ms
-[00:51:23.450] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:139:5
+[00:01:35.905] Server  LOG      ✓ Compiled in 39ms
+[00:01:44.610] Server  LOG      ✓ Compiled in 31ms
+[00:01:52.121] Server  LOG      ✓ Compiled in 33ms
+[00:02:03.970] Server  LOG      ✓ Compiled in 33ms
+[00:02:05.670] Server  LOG      ✓ Compiled in 58ms
+[00:02:30.438] Server  LOG      ✓ Compiled in 314ms
+[00:02:31.484] Browser ERROR   ./my-app/src/component/FeaturedSection/AppStore.js:154:25
 Parsing ecmascript source code failed
-  137 |      top:
-  138 |
-> 139 |     },
-      |     ^
-  140 |   }}
-  141 | >
-  142 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:51:25.905] Server  LOG      ✓ Compiled in 96ms
-[00:51:27.969] Server  LOG      ✓ Compiled in 58ms
-[00:51:29.786] Server  LOG      ✓ Compiled in 53ms
-[00:51:46.818] Server  LOG      ✓ Compiled in 70ms
-[00:51:57.194] Server  LOG      ✓ Compiled in 89ms
-[00:52:18.881] Server  LOG      ✓ Compiled in 41ms
-[00:52:26.285] Server  LOG      ✓ Compiled in 174ms
-[00:53:44.803] Server  LOG      ✓ Compiled in 172ms
-[00:54:00.534] Server  LOG      ✓ Compiled in 95ms
-[00:55:33.384] Server  LOG      ✓ Compiled in 686ms
-[00:55:34.446] Browser ERROR   ./my-app/src/component/HeroSection/components/HotelSearchForm.js:190:104
-Parsing ecmascript source code failed
-  188 |             >
-  189 |               <Box>
-> 190 |                <Typography fontWeight={700} sx={{ fontSize: "10px" }}> fontFamily="'Inter', sans-serif">
-      |                                                                                                        ^
-  191 |                   {city.city}, {city.country}
-  192 |                 </Typography>
-  193 |                 <Typography variant="caption" color="text.secondary" fontFamily="'Inter', sans-serif">
-
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/HotelSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/HotelSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[00:55:38.606] Server  LOG      ✓ Compiled in 201ms
-[00:56:38.821] Server  LOG      ✓ Compiled in 168ms
-[00:56:56.988] Server  LOG      ✓ Compiled in 98ms
-[00:57:14.183] Server  LOG      ✓ Compiled in 101ms
-[00:57:20.661] Server  LOG      ✓ Compiled in 58ms
-[00:57:22.536] Server  LOG      ✓ Compiled in 51ms
-[00:57:24.778] Server  LOG      ✓ Compiled in 65ms
-[00:57:37.031] Server  LOG      ✓ Compiled in 81ms
-[00:57:56.852] Server  LOG      ✓ Compiled in 92ms
-[00:57:57.448] Browser ERROR   uncaughtError: ReferenceError: anchorEl is not defined
-[00:58:05.129] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:58:05.152] Server  LOG      ✓ Compiled in 81ms
-[00:58:06.243] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:58:06.247] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:58:06.249] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:58:06.531] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:58:08.959] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:58:10.481] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:58:10.481] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:58:10.481] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:58:10.481] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:58:11.458] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="/my-app/sr...">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
-                        <RootLayout params={Promise}>
-                          <html lang="en">
-                            <body
-                              sx={{Margin:0,Padding:0}}
--                             data-new-gr-c-s-check-loaded="14.1267.0"
--                             data-gr-ext-installed=""
-                            >
-                  ...
-
-[00:58:31.173] Server  LOG      ✓ Compiled in 53ms
-[00:58:32.769] Server  LOG      ✓ Compiled in 81ms
-[00:58:42.855] Server  LOG      ✓ Compiled in 46ms
-[00:59:25.021] Server  LOG      ✓ Compiled in 90ms
-[00:59:25.456] Browser ERROR   uncaughtError: ReferenceError: anchorEl is not defined
-[00:59:31.775] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:59:31.795] Server  LOG      ✓ Compiled in 60ms
-[00:59:34.206] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:59:34.215] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:59:34.220] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:59:34.510] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:59:36.528] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:59:38.699] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[00:59:38.699] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:59:38.700] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[00:59:38.700] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:00:21.066] Server  LOG      ✓ Compiled in 55ms
-[01:00:43.938] Server  LOG      ✓ Compiled in 56ms
-[01:00:47.007] Server  LOG      ✓ Compiled in 37ms
-[01:01:10.654] Server  LOG      ✓ Compiled in 60ms
-[01:01:14.279] Server  LOG      ✓ Compiled in 721ms
-[01:01:14.456] Browser ERROR   ./my-app/src/component/HeroSection/components/TourSearchForm.js:164:15
-Parsing ecmascript source code failed
-  162 |     },
-  163 |   }}
-> 164 |               }}
-      |               ^
-  165 |             >
-  166 |               {filteredCities.length > 0 ? (
-  167 |                 filteredCities.map((city, index) => (
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:01:16.812] Server  LOG      ✓ Compiled in 319ms
-[01:01:26.221] Server  LOG      ✓ Compiled in 77ms
-[01:01:27.734] Server  LOG      ✓ Compiled in 75ms
-[01:01:37.193] Server  LOG      ✓ Compiled in 71ms
-[01:02:06.788] Server  LOG      ✓ Compiled in 97ms
-[01:02:07.457] Browser ERROR   ./my-app/src/component/HeroSection/components/TourSearchForm.js:401:18
-Parsing ecmascript source code failed
-  399 |               onClose={handleCityClose}
-  400 |               PaperProps={{ 
-> 401 |                sx{ 
-      |                  ^
-  402 |                   maxHeight: 250,
-  403 |                   fontFamily: "'Inter', sans-serif",
-  404 |                 } 
-
-Expected '</', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:02:09.016] Server  LOG      ✓ Compiled in 138ms
-[01:02:10.167] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.382] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.408] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\server\require-hook.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.412] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.424] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.429] Server  ERROR    ⨯ Error: Failed to load chunk server/chunks/ssr/my-app_src_98988198._.js from module [project]/my-app/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/my-app/src/app/favicon.ico.mjs { IMAGE => \"[project]/my-app/src/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/my-app/src/app/layout.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/my-app/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/my-app/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/my-app/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/my-app/src/app/page.js [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
-[01:02:10.507] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.513] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.519] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\server\require-hook.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.522] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.525] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.527] Server  ERROR   Error: Failed to load chunk server/chunks/ssr/my-app_src_98988198._.js from module [project]/my-app/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/my-app/src/app/favicon.ico.mjs { IMAGE => \"[project]/my-app/src/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/my-app/src/app/layout.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/my-app/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/my-app/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/my-app/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/my-app/src/app/page.js [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
-[01:02:10.529] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.534] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.539] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\server\require-hook.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.540] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.544] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.547] Server  ERROR    ⨯ "unhandledRejection:" Error: Failed to load chunk server/chunks/ssr/my-app_src_98988198._.js from module [project]/my-app/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/my-app/src/app/favicon.ico.mjs { IMAGE => \"[project]/my-app/src/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/my-app/src/app/layout.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/my-app/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/my-app/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/my-app/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/my-app/src/app/page.js [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
-[01:02:10.549] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.554] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.558] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\server\require-hook.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.559] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.564] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:10.565] Server  ERROR    ⨯ "unhandledRejection: " Error: Failed to load chunk server/chunks/ssr/my-app_src_98988198._.js from module [project]/my-app/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/my-app/src/app/favicon.ico.mjs { IMAGE => \"[project]/my-app/src/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/my-app/src/app/layout.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/my-app/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/my-app/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/my-app/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/my-app/src/app/page.js [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
-[01:02:11.582] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:02:12.392] Server  LOG      ✓ Compiled in 79ms
-[01:02:13.454] Browser ERROR   uncaughtError: SyntaxError: Invalid shorthand property initializer
-[01:02:13.454] Browser ERROR   ./my-app/src/component/HeroSection/components/TourSearchForm.js:401:20
-Parsing ecmascript source code failed
-  399 |               onClose={handleCityClose}
-  400 |               PaperProps={{ 
-> 401 |                sx={{ 
-      |                    ^
-  402 |                   maxHeight: 250,
-  403 |                   fontFamily: "'Inter', sans-serif",
-  404 |                 } 
-
-Expected '</', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:02:17.462] Browser ERROR   ./my-app/src/component/HeroSection/components/TourSearchForm.js:401:20
-Parsing ecmascript source code failed
-  399 |               onClose={handleCityClose}
-  400 |               PaperProps={{ 
-> 401 |                sx={{ 
-      |                    ^
-  402 |                   maxHeight: 250,
-  403 |                   fontFamily: "'Inter', sans-serif",
-  404 |                 
-
-Expected '</', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:02:20.134] Server  LOG      ✓ Compiled in 79ms
-[01:02:20.257] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.261] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.266] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\server\require-hook.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.267] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.272] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.274] Server  ERROR    ⨯ Error: Failed to load chunk server/chunks/ssr/my-app_src_98988198._.js from module [project]/my-app/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/my-app/src/app/favicon.ico.mjs { IMAGE => \"[project]/my-app/src/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/my-app/src/app/layout.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/my-app/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/my-app/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/my-app/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/my-app/src/app/page.js [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
-[01:02:20.346] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.354] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.360] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\server\require-hook.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.367] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.374] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.376] Server  ERROR   Error: Failed to load chunk server/chunks/ssr/my-app_src_98988198._.js from module [project]/my-app/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/my-app/src/app/favicon.ico.mjs { IMAGE => \"[project]/my-app/src/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/my-app/src/app/layout.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/my-app/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/my-app/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/my-app/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/my-app/src/app/page.js [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
-[01:02:20.379] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.385] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.390] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\server\require-hook.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.392] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.397] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.399] Server  ERROR    ⨯ "unhandledRejection:" Error: Failed to load chunk server/chunks/ssr/my-app_src_98988198._.js from module [project]/my-app/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/my-app/src/app/favicon.ico.mjs { IMAGE => \"[project]/my-app/src/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/my-app/src/app/layout.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/my-app/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/my-app/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/my-app/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/my-app/src/app/page.js [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
-[01:02:20.401] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.406] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.411] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\server\require-hook.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.415] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.427] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:02:20.430] Server  ERROR    ⨯ "unhandledRejection: " Error: Failed to load chunk server/chunks/ssr/my-app_src_98988198._.js from module [project]/my-app/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/my-app/src/app/favicon.ico.mjs { IMAGE => \"[project]/my-app/src/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/my-app/src/app/layout.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/my-app/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/my-app/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/my-app/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/my-app/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/my-app/src/app/page.js [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
-[01:02:21.087] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:02:21.461] Browser ERROR   uncaughtError: SyntaxError: Invalid shorthand property initializer
-[01:02:22.752] Server  LOG      ✓ Compiled in 51ms
-[01:02:27.365] Server  LOG      ✓ Compiled in 61ms
-[01:02:32.596] Server  LOG      ✓ Compiled in 174ms
-[01:02:33.647] Server  LOG      ✓ Compiled in 54ms
-[01:02:35.575] Server  LOG      ✓ Compiled in 71ms
-[01:02:36.451] Browser ERROR   ./my-app/src/component/HeroSection/components/TourSearchForm.js:404:21
-Parsing ecmascript source code failed
-  402 |                   maxHeight: 250,
-  403 |                   fontFamily: "'Inter', sans-serif",
-> 404 |                   sx-{{}}
-      |                     ^
-  405 |                 } 
-  406 |               }}
-  407 |             >
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:02:39.046] Server  LOG      ✓ Compiled in 50ms
-[01:02:39.459] Browser ERROR   ./my-app/src/component/HeroSection/components/TourSearchForm.js:404:23
-Parsing ecmascript source code failed
-  402 |                   maxHeight: 250,
-  403 |                   fontFamily: "'Inter', sans-serif",
-> 404 |                   sx={{}}
-      |                       ^
-  405 |                 } 
-  406 |               }}
-  407 |             >
-
-Expected '</', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:02:44.455] Browser ERROR   ./my-app/src/component/HeroSection/components/TourSearchForm.js:404:23
-Parsing ecmascript source code failed
-  402 |                   maxHeight: 250,
-  403 |                   fontFamily: "'Inter', sans-serif",
-> 404 |                   sx={{
-      |                       ^
-  405 |                     
-  406 |                   }}
-  407 |                 } 
-
-Expected '</', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:02:47.456] Browser ERROR   ./my-app/src/component/HeroSection/components/TourSearchForm.js:404:23
-Parsing ecmascript source code failed
-  402 |                   maxHeight: 250,
-  403 |                   fontFamily: "'Inter', sans-serif",
-> 404 |                   sx={{
-      |                       ^
-  405 |
-  406 |                   }}
-  407 |                 } 
-
-Expected '</', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:02:49.458] Browser ERROR   ./my-app/src/component/HeroSection/components/TourSearchForm.js:404:23
-Parsing ecmascript source code failed
-  402 |                   maxHeight: 250,
-  403 |                   fontFamily: "'Inter', sans-serif",
-> 404 |                   sx={{
-      |                       ^
-  405 |                     
-  406 |                   }}
-  407 |                 } 
-
-Expected '</', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:02:51.451] Browser ERROR   ./my-app/src/component/HeroSection/components/TourSearchForm.js:404:23
-Parsing ecmascript source code failed
-  402 |                   maxHeight: 250,
-  403 |                   fontFamily: "'Inter', sans-serif",
-> 404 |                   sx={{
-      |                       ^
-  405 |                     
-  406 |                
-  407 |                 } 
-
-Expected '</', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:02:55.448] Browser ERROR   ./my-app/src/component/HeroSection/components/TourSearchForm.js:404:23
-Parsing ecmascript source code failed
-  402 |                   maxHeight: 250,
-  403 |                   fontFamily: "'Inter', sans-serif",
-> 404 |                   sx={{
-      |                       ^
-  405 |                     
-  406 |                
-  407 |                 
-
-Expected '</', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:02:59.460] Browser ERROR   ./my-app/src/component/HeroSection/components/TourSearchForm.js:404:23
-Parsing ecmascript source code failed
-  402 |                   maxHeight: 250,
-  403 |                   fontFamily: "'Inter', sans-serif",
-> 404 |                   sx={{}}
-      |                       ^
-  405 |                 } 
-  406 |               }}
-  407 |             >
-
-Expected '</', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:03:01.457] Browser ERROR   ./my-app/src/component/HeroSection/components/TourSearchForm.js:404:21
-Parsing ecmascript source code failed
-  402 |                   maxHeight: 250,
-  403 |                   fontFamily: "'Inter', sans-serif",
-> 404 |                   sx{{}}
-      |                     ^
-  405 |                 } 
-  406 |               }}
-  407 |             >
-
-Expected '</', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:03:02.002] Server  LOG      ✓ Compiled in 36ms
-[01:03:02.459] Browser ERROR   ./my-app/src/component/HeroSection/components/TourSearchForm.js:404:21
-Parsing ecmascript source code failed
-  402 |                   maxHeight: 250,
-  403 |                   fontFamily: "'Inter', sans-serif",
-> 404 |                   sx-{{}}
-      |                     ^
-  405 |                 } 
-  406 |               }}
-  407 |             >
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/TourSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:03:03.931] Server  LOG      ✓ Compiled in 98ms
-[01:03:04.895] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[01:03:04.897] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:03:04.899] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:03:05.108] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:03:06.975] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:03:08.459] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[01:03:08.459] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:03:08.459] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:03:08.460] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:04:04.882] Server  LOG      ✓ Compiled in 95ms
-[01:04:06.708] Server  LOG      ✓ Compiled in 131ms
-[01:05:45.709] Server  LOG      ✓ Compiled in 120ms
-[01:05:46.492] Server  LOG      ✓ Compiled in 63ms
-[01:05:53.198] Server  LOG      ✓ Compiled in 72ms
-[01:05:54.989] Server  LOG      ✓ Compiled in 133ms
-[01:05:56.816] Server  LOG      ✓ Compiled in 619ms
-[01:05:57.452] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:242:25
-Parsing ecmascript source code failed
-  240 |               onChange={(e) => setSelectedTripType(e.target.value)}
-  241 |               sx={
-> 242 |                 fontSize: "10px",
+  152 |       <Box sx={{ 
+  153 |         display: "flex",
+> 154 |         justifyContent: ,
       |                         ^
-  243 |                 fontWeight: 700,
-  244 |                 color: "#000",
-  245 |                 height: 24,
-
-Expected '</', got ':'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:05:59.051] Server  LOG      ✓ Compiled in 110ms
-[01:06:00.494] Server  LOG      ✓ Compiled in 59ms
-[01:06:16.635] Server  LOG      ✓ Compiled in 62ms
-[01:06:19.187] Server  LOG      ✓ Compiled in 54ms
-[01:06:32.918] Server  LOG      ✓ Compiled in 79ms
-[01:06:33.454] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:53
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" } gap}}
-      |                                                     ^^^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got 'gap'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:06:35.454] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:53
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" } gap:}}
-      |                                                     ^^^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got 'gap'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:06:37.461] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:53
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" } gap:{}}}
-      |                                                     ^^^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got 'gap'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:06:44.965] Server  LOG      ✓ Compiled in 85ms
-[01:06:45.460] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:60
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" } ,gap:{2}}}
-      |                                                            ^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:06:50.247] Server  LOG      ✓ Compiled in 97ms
-[01:06:50.459] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:61
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" } ,gap:{20px}}}
-      |                                                             ^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Identifier cannot follow number
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:06:54.472] Server  LOG      ✓ Compiled in 54ms
-[01:06:55.457] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:62
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" } ,gap:{xs:}}}
-      |                                                              ^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:07:02.249] Server  LOG      ✓ Compiled in 52ms
-[01:07:07.675] Server  LOG      ✓ Compiled in 46ms
-[01:07:09.137] Server  LOG      ✓ Compiled in 47ms
-[01:07:09.453] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:62
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" } ,gap:{xs:}}}
-      |                                                              ^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:07:24.022] Server  LOG      ✓ Compiled in 66ms
-[01:07:24.454] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:55
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" } }}}
-      |                                                       ^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:07:42.459] Server  LOG      ✓ Compiled in 73ms
-[01:07:55.290] Server  LOG      ✓ Compiled in 71ms
-[01:07:55.447] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:53
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" } jus}}
-      |                                                     ^^^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got 'jus'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:07:58.458] Browser ERROR   uncaughtError: ReferenceError: justifyContent is not defined
-[01:07:59.094] Server  LOG      ✓ Compiled in 73ms
-[01:07:59.462] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:68
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" }, justifyContent{}}}
-      |                                                                    ^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:08:00.641] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:08:00.650] Server  LOG      ✓ Compiled in 87ms
-[01:08:01.915] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\my-app_src_98988198._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:08:01.920] Server  ERROR    ⨯ ReferenceError: justifyContent is not defined
-[01:08:03.537] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:08:04.533] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:69
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" }, justifyContent:}}
-      |                                                                     ^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:08:04.533] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:69
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" }, justifyContent:}}
-      |                                                                     ^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:08:04.533] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:69
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" }, justifyContent:}}
-      |                                                                     ^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:08:05.125] Server  LOG      ✓ Compiled in 62ms
-[01:08:05.407] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:69
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" }, justifyContent:}}
-      |                                                                     ^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:08:05.407] Browser ERROR   uncaughtError: ReferenceError: justifyContent is not defined
-[01:08:06.898] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[01:08:06.901] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:08:06.903] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:08:07.125] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:08:08.069] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:08:08.110] Server  LOG      ✓ Compiled in 50ms
-[01:08:09.922] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:08:10.473] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:73
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" }, justifyContent:{xs:}}}
-      |                                                                         ^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:08:11.550] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:73
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" }, justifyContent:{xs:}}}
-      |                                                                         ^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:08:11.550] Browser ERROR   uncaughtError: Error: Could not parse module '[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js'
-
-Expected '</', got '}'
-[01:08:13.513] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:08:13.514] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./my-app/src/component/HeroSection/components/FlightSearchForm.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[01:08:13.515] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:08:14.845] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[01:08:14.847] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:08:14.849] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:08:15.073] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:08:18.881] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:08:19.502] Server  LOG      ✓ Compiled in 18ms
-[01:08:20.328] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[01:08:20.328] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:08:20.329] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:08:20.615] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:08:22.963] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="/my-app/sr...">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
-                        <RootLayout params={Promise}>
-                          <html lang="en">
-                            <body
-                              sx={{Margin:0,Padding:0}}
--                             data-new-gr-c-s-check-loaded="14.1267.0"
--                             data-gr-ext-installed=""
-                            >
-                              ...
-                                <FormControl size="small" sx={{...}}>
-                                  <MuiFormControl-root as="div" ownerState={{size:"small", ...}} ...>
-                                    <Insertion>
-                                    <div
-+                                     className="MuiFormControl-root css-bmly5k-MuiFormControl-root"
--                                     className="MuiFormControl-root css-1smo3nj-MuiFormControl-root"
-                                    >
-                  ...
-
-[01:08:29.252] Server  LOG      ✓ Compiled in 51ms
-[01:08:39.117] Server  LOG      ✓ Compiled in 62ms
-[01:08:39.462] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:70
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" }, justifyContent:{:"space-around"}}}
-      |                                                                      ^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got ':'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:08:48.481] Server  LOG      ✓ Compiled in 54ms
-[01:08:49.453] Browser ERROR   uncaughtError: ReferenceError: px is not defined
-[01:08:52.046] Server  LOG      ✓ Compiled in 62ms
-[01:08:52.050] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:08:53.602] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[01:08:53.605] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:08:53.607] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:08:53.942] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:08:57.066] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:08:58.168] Server  LOG      ✓ Compiled in 71ms
-[01:08:58.568] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:261:61
-Parsing ecmascript source code failed
-  259 |           <FormControl
-  260 |             size="small"
-> 261 |             sx={{ width: { xs: "100%", sm: "100%" }, px:{xs:}}}
-      |                                                             ^
-  262 |           >
-  263 |             <Select
-  264 |               value={selectedCabinClass}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:08:58.568] Browser ERROR   uncaughtError: Error: Internal Next.js error: Router action dispatched before initialization.
-[01:08:58.953] Browser ERROR   uncaughtError: Error: Could not parse module '[project]/my-app/src/component/HeroSection/components/FlightSearchForm.js'
-
-Expected '</', got '}'
-[01:09:09.531] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:09:09.531] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./my-app/src/component/HeroSection/components/FlightSearchForm.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[01:09:09.536] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:09:09.550] Server  LOG      ✓ Compiled in 49ms
-[01:09:10.805] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[01:09:10.809] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:09:10.811] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:09:11.255] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:09:13.835] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:09:15.262] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[01:09:15.262] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:09:15.262] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:09:15.525] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:09:18.668] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="/my-app/sr...">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
-                        <RootLayout params={Promise}>
-                          <html lang="en">
-                            <body
-                              sx={{Margin:0,Padding:0}}
--                             data-new-gr-c-s-check-loaded="14.1267.0"
--                             data-gr-ext-installed=""
-                            >
-                  ...
-
-[01:09:20.804] Server  LOG      ✓ Compiled in 43ms
-[01:09:25.783] Server  LOG      ✓ Compiled in 45ms
-[01:09:27.183] Server  LOG      ✓ Compiled in 46ms
-[01:09:28.385] Server  LOG      ✓ Compiled in 39ms
-[01:09:31.569] Server  LOG      ✓ Compiled in 65ms
-[01:09:38.212] Server  LOG      ✓ Compiled in 44ms
-[01:09:47.414] Server  LOG      ✓ Compiled in 53ms
-[01:10:06.448] Server  LOG      ✓ Compiled in 125ms
-[01:10:14.233] Server  LOG      ✓ Compiled in 38ms
-[01:10:27.210] Server  LOG      ✓ Compiled in 62ms
-[01:10:36.518] Server  LOG      ✓ Compiled in 52ms
-[01:10:43.115] Server  LOG      ✓ Compiled in 40ms
-[01:10:49.684] Server  LOG      ✓ Compiled in 45ms
-[01:10:55.140] Server  LOG      ✓ Compiled in 49ms
-[01:10:56.297] Server  LOG      ✓ Compiled in 40ms
-[01:11:03.134] Server  LOG      ✓ Compiled in 43ms
-[01:11:13.590] Server  LOG      ✓ Compiled in 38ms
-[01:11:15.506] Server  LOG      ✓ Compiled in 47ms
-[01:11:16.451] Browser ERROR   uncaughtError: ReferenceError: dis is not defined
-[01:11:17.489] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:11:17.504] Server  LOG      ✓ Compiled in 46ms
-[01:11:18.938] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\my-app_src_98988198._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:11:18.942] Server  ERROR    ⨯ ReferenceError: display is not defined
-[01:11:19.014] Browser ERROR   uncaughtError: ReferenceError: display is not defined
-[01:11:20.235] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:11:23.459] Browser ERROR   uncaughtError: ReferenceError: display is not defined
-[01:11:23.653] Server  LOG      ✓ Compiled in 257ms
-[01:11:24.453] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:236:61
-Parsing ecmascript source code failed
-  234 |           <FormControl
-  235 |             size="small"
-> 236 |             sx={{ width: { xs: "100%", sm: "100%" },display:}}
-      |                                                             ^
-  237 |           >
-  238 |             <Select
-  239 |               value={selectedTripType}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:11:27.456] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:236:61
-Parsing ecmascript source code failed
-  234 |           <FormControl
-  235 |             size="small"
-> 236 |             sx={{ width: { xs: "100%", sm: "100%" },display:}}
-      |                                                             ^
-  237 |           >
-  238 |             <Select
-  239 |               value={selectedTripType}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:11:30.141] Server  LOG      ✓ Compiled in 122ms
-[01:11:30.158] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:11:31.399] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[01:11:31.402] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:11:31.404] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:11:31.645] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:11:34.257] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:11:36.074] Server  LOG      ✓ Compiled in 59ms
-[01:11:37.459] Browser ERROR   uncaughtError: ReferenceError: jus is not defined
-[01:11:38.746] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:11:38.757] Server  LOG      ✓ Compiled in 55ms
-[01:11:40.410] Server  ERROR   F:\Next Js Projects\PhpTravel MUI\my-app\.next\dev\server\chunks\ssr\my-app_src_98988198._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:11:40.412] Server  ERROR    ⨯ ReferenceError: justifyContent is not defined
-[01:11:40.504] Browser ERROR   uncaughtError: ReferenceError: justifyContent is not defined
-[01:11:40.597] Server  LOG      ✓ Compiled in 66ms
-[01:11:41.757] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:11:44.459] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
-
-[01:11:44.459] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:11:44.459] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:11:44.459] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
-
-[01:11:44.599] Server  LOG      ✓ Compiled in 82ms
-[01:11:45.451] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:236:92
-Parsing ecmascript source code failed
-  234 |           <FormControl
-  235 |             size="small"
-> 236 |             sx={{ width: { xs: "100%", sm: "100%" },display:"flex", justifyContent:{"space"}}}
-      |                                                                                            ^
-  237 |           >
-  238 |             <Select
-  239 |               value={selectedTripType}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:11:52.465] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:236:100
-Parsing ecmascript source code failed
-  234 |           <FormControl
-  235 |             size="small"
-> 236 |             sx={{ width: { xs: "100%", sm: "100%" },display:"flex", justifyContent:{"space-between"}}}
-      |                                                                                                    ^
-  237 |           >
-  238 |             <Select
-  239 |               value={selectedTripType}
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:12:03.078] Server  LOG      ✓ Compiled in 110ms
-[01:12:03.462] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:236:87
-Parsing ecmascript source code failed
-  234 |           <FormControl
-  235 |             size="small"
-> 236 |             sx={{ width: { xs: "100%", sm: "100%" },display:"flex", justifyContent:{xs"space-between"}}}
-      |                                                                                       ^^^^^^^^^^^^^^^
-  237 |           >
-  238 |             <Select
-  239 |               value={selectedTripType}
-
-Expected '</', got 'string literal (space-between, "space-between")'
-
-Import traces:
-  Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
-    ./my-app/src/app/page.js [Client Component Browser]
-    ./my-app/src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
-    ./my-app/src/app/page.js [Client Component SSR]
-    ./my-app/src/app/page.js [Server Component]
-[01:12:17.292] Server  LOG      ✓ Compiled in 160ms
-[01:12:18.313] Server  LOG      ✓ Compiled in 82ms
-[01:12:19.363] Server  LOG      ✓ Compiled in 35ms
-[01:12:22.329] Server  LOG      ✓ Compiled in 54ms
-[01:12:39.368] Server  LOG      ✓ Compiled in 68ms
-[01:13:04.521] Server  LOG      ✓ Compiled in 85ms
-[01:13:05.127] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:246:26
-Parsing ecmascript source code failed
-  244 |                 color: "#000",
-  245 |                 height: 24,
-> 246 |                 right: { , md: "-10px", lg: "-5px" }
-      |                          ^
-  247 |               }}
-  248 |             >
-  249 |               {tripTypeOptions.map((option) => (
+  155 |         alignItems: "center",
+  156 |         flex: 1,
+  157 |         width: isMobile ? "100%" : "auto",
 
 Expected '</', got ','
 
 Import traces:
   Client Component Browser:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
-    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/component/FeaturedSection/AppStore.js [Client Component Browser]
     ./my-app/src/app/page.js [Client Component Browser]
     ./my-app/src/app/page.js [Server Component]
 
   Client Component SSR:
-    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
-    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/component/FeaturedSection/AppStore.js [Client Component SSR]
     ./my-app/src/app/page.js [Client Component SSR]
     ./my-app/src/app/page.js [Server Component]
-[01:13:22.740] Server  LOG      ✓ Compiled in 67ms
-[01:13:26.012] Server  LOG      ✓ Compiled in 44ms
-[01:13:31.268] Server  LOG      ✓ Compiled in 49ms
-[01:13:36.920] Server  LOG      ✓ Compiled in 36ms
-[01:13:38.108] Server  LOG      ✓ Compiled in 40ms
-[01:15:07.121] Server  LOG      ✓ Compiled in 62ms
-[01:15:31.969] Server  LOG      ✓ Compiled in 48ms
+[00:02:36.972] Server  LOG      ✓ Compiled in 50ms
+[00:02:37.494] Browser ERROR   ./my-app/src/component/FeaturedSection/AppStore.js:154:29
+Parsing ecmascript source code failed
+  152 |       <Box sx={{ 
+  153 |         display: "flex",
+> 154 |         justifyContent: {xs:},
+      |                             ^
+  155 |         alignItems: "center",
+  156 |         flex: 1,
+  157 |         width: isMobile ? "100%" : "auto",
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/AppStore.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/AppStore.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[00:02:44.488] Browser ERROR   ./my-app/src/component/FeaturedSection/AppStore.js:154:29
+Parsing ecmascript source code failed
+  152 |       <Box sx={{ 
+  153 |         display: "flex",
+> 154 |         justifyContent: {xs:},
+      |                             ^
+  155 |         alignItems: "center",
+  156 |         flex: 1,
+  157 |         width: isMobile ? "100%" : "auto",
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/AppStore.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/AppStore.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[00:02:46.241] Server  LOG      ✓ Compiled in 59ms
+[00:02:58.302] Server  LOG      ✓ Compiled in 24ms
+[00:03:00.101] Server  LOG      ✓ Compiled in 29ms
+[00:03:00.495] Browser ERROR   uncaughtError: ReferenceError: mt is not defined
+[00:03:03.077] Server  LOG      ✓ Compiled in 56ms
+[00:03:03.486] Browser ERROR   ./my-app/src/component/FeaturedSection/AppStore.js:160:7
+Parsing ecmascript source code failed
+  158 |         mt: isMobile ? 1 : 0,
+  159 |         mb:
+> 160 |       }}>
+      |       ^
+  161 |         <Box
+  162 |           sx={{
+  163 |             display: "flex",
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/AppStore.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/AppStore.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[00:03:07.290] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:07.308] Server  LOG      ✓ Compiled in 37ms
+[00:03:08.591] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+[00:03:08.593] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:03:08.594] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:03:08.798] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:03:09.415] Server  ERROR   MUI: Expected spacing argument to be a number or a string, got false.
+[00:03:10.218] Server  LOG      ✓ Compiled in 280ms
+[00:03:12.196] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:14.491] Browser ERROR   ./my-app/src/component/FeaturedSection/AppStore.js:160:7
+Parsing ecmascript source code failed
+  158 |         mt: isMobile ? 1 : 0,
+  159 |         mb:isMobile? -4
+> 160 |       }}>
+      |       ^
+  161 |         <Box
+  162 |           sx={{
+  163 |             display: "flex",
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/AppStore.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/AppStore.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[00:03:14.491] Browser ERROR   ./my-app/src/component/FeaturedSection/AppStore.js:160:7
+Parsing ecmascript source code failed
+  158 |         mt: isMobile ? 1 : 0,
+  159 |         mb:isMobile? -4
+> 160 |       }}>
+      |       ^
+  161 |         <Box
+  162 |           sx={{
+  163 |             display: "flex",
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/AppStore.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/AppStore.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[00:03:14.491] Browser ERROR   uncaughtError: Error: Could not parse module '[project]/my-app/src/component/FeaturedSection/AppStore.js'
+
+Expected '</', got '}'
+[00:03:15.263] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:15.265] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./my-app/src/component/FeaturedSection/AppStore.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:03:15.266] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:16.132] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+[00:03:16.134] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:03:16.135] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:03:16.266] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:03:18.924] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:20.095] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+[00:03:20.095] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:03:20.095] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:03:20.278] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:03:21.717] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/my-app/sr...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
+                        <RootLayout params={Promise}>
+                          <html lang="en">
+                            <body
+                              sx={{Margin:0,Padding:0}}
+-                             data-new-gr-c-s-check-loaded="14.1267.0"
+-                             data-gr-ext-installed=""
+                            >
+                  ...
+
+[00:03:34.262] Server  LOG      ✓ Compiled in 39ms
+[00:03:38.703] Server  LOG      ✓ Compiled in 21ms
+[00:26:36.378] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+[00:26:36.381] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:26:36.383] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:26:36.645] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:26:38.853] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:40.538] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+[00:26:40.539] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:26:40.539] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:26:40.539] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[00:26:40.539] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/my-app/sr...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
+                        <RootLayout params={Promise}>
+                          <html lang="en">
+                            <body
+                              sx={{Margin:0,Padding:0}}
+-                             data-new-gr-c-s-check-loaded="14.1267.0"
+-                             data-gr-ext-installed=""
+                            >
+                  ...
+
+[01:09:15.993] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:09:17.555] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+[01:09:17.555] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[01:09:17.555] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[01:09:17.555] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+

@@ -156,6 +156,7 @@ const AppStore = () => {
         flex: 1,
         width: isMobile ? "100%" : "auto",
         mt: isMobile ? 1 : 0,
+        mb:isMobile? -3:0
       }}>
         <Box
           sx={{
