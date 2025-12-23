@@ -2370,6 +2370,7 @@ function TravellersDropdown({ travellers, onTravellersChange }) {
                     color: "#000",
                     width: {
                         xs: 238,
+                        md: 170,
                         lg: 160
                     },
                     borderColor: "#c0c0c0",
@@ -3312,7 +3313,7 @@ function FlightSearchForm() {
                             gap: 1,
                             width: {
                                 xs: "100%",
-                                md: 230
+                                md: 200
                             },
                             flexDirection: {
                                 xs: "column",
@@ -3320,6 +3321,7 @@ function FlightSearchForm() {
                             },
                             mt: {
                                 xs: "5px",
+                                md: "0.4px",
                                 lg: "0.4px"
                             }
                         },
@@ -3491,6 +3493,7 @@ function FlightSearchForm() {
                             sx: {
                                 width: {
                                     xs: "238px",
+                                    md: "4px",
                                     lg: "40px"
                                 },
                                 alignItems: "center",
@@ -5988,7 +5991,7 @@ function CarSearchForm() {
             }, this) : // Desktop Layout - Grid
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Grid$2f$Grid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
                 container: true,
-                spacing: 2,
+                spacing: 1.4,
                 alignItems: "center",
                 sx: {
                     m: 1,
@@ -6512,6 +6515,7 @@ function VisaSearchForm() {
                             minHeight: 40,
                             width: {
                                 xs: "238px",
+                                md: "120px",
                                 lg: "40px"
                             },
                             pl: 3
@@ -8650,6 +8654,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
                 alignItems: "center",
                 textAlign: "center",
                 p: 4,
+                mt: {
+                    xs: "20px"
+                },
                 border: "1px solid #e0e0e0",
                 fontFamily: "'Inter', sans-serif"
             },
@@ -8661,7 +8668,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
                     children: icon
                 }, void 0, false, {
                     fileName: "[project]/my-app/src/component/FeaturedSection/BottomCards.js",
-                    lineNumber: 62,
+                    lineNumber: 63,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -8677,7 +8684,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
                     children: title
                 }, void 0, false, {
                     fileName: "[project]/my-app/src/component/FeaturedSection/BottomCards.js",
-                    lineNumber: 67,
+                    lineNumber: 68,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$app$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -8691,7 +8698,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
                     children: description
                 }, void 0, false, {
                     fileName: "[project]/my-app/src/component/FeaturedSection/BottomCards.js",
-                    lineNumber: 82,
+                    lineNumber: 83,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
@@ -8734,17 +8741,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
                     ...feature
                 }, index, false, {
                     fileName: "[project]/my-app/src/component/FeaturedSection/BottomCards.js",
-                    lineNumber: 122,
+                    lineNumber: 123,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0)))
         }, void 0, false, {
             fileName: "[project]/my-app/src/component/FeaturedSection/BottomCards.js",
-            lineNumber: 113,
+            lineNumber: 114,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/my-app/src/component/FeaturedSection/BottomCards.js",
-        lineNumber: 103,
+        lineNumber: 104,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

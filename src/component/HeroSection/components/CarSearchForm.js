@@ -378,7 +378,7 @@ export default function CarSearchForm() {
         </Stack>
       ) : (
         // Desktop Layout - Grid
-        <Grid container spacing={2} alignItems="center" sx={{ m: 1, pl:5 }}>
+        <Grid container spacing={1.4} alignItems="center" sx={{ m: 1, pl:5 }}>
           <Grid item xs={12} sm={2}>
             <TextField
               fullWidth

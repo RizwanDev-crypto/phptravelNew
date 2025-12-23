@@ -354,9 +354,9 @@ export default function FlightSearchForm() {
           sx={{
             display: "flex",
             gap: 1,
-            width: { xs: "100%", md: 230 },
+            width: { xs: "100%", md: 200 },
             flexDirection: { xs: "column", md: "row" },
-            mt: { xs: "5px", lg: "0.4px" }
+            mt: { xs: "5px",md:"0.4px" ,lg: "0.4px" }
           }}
         >
           {/* Depart Date */}
@@ -455,7 +455,7 @@ export default function FlightSearchForm() {
             color="primary"
             startIcon={<Search sx={{ height: 40, pl: "12px", py: "5px" }} />}
             sx={{
-              width: { xs: "238px", lg: "40px" },
+              width: { xs: "238px", md:"4px", lg: "40px" },
               alignItems: "center",
               height: 40,
               margin: "auto",

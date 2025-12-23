@@ -85,7 +85,7 @@ export default function TravellersDropdown({ travellers, onTravellersChange }) {
           height: 40,
           fontSize: "12px",
           color: "#000",
-          width: { xs: 238 , lg:160}, // xs = extra small = mobile
+          width: { xs: 238, md:170, lg:160}, 
           borderColor: "#c0c0c0",
           justifyContent: "space-between",
           textTransform: "none",

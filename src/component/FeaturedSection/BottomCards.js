@@ -54,6 +54,7 @@ const FeatureCard = ({ icon, title, description }) => {
           alignItems: "center",
           textAlign: "center",
           p: 4,
+         mt:{xs:"20px"},
           border: "1px solid #e0e0e0",
           fontFamily: "'Inter', sans-serif", // Inter font added
         }}

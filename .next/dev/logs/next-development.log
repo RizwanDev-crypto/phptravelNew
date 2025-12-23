@@ -363,3 +363,1320 @@ It can also happen if the client has a browser extension installed which messes 
 
 [01:09:17.555] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
 
+[02:20:32.896] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:20:33.599] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+[02:20:33.599] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:20:33.599] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:20:33.717] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:20:34.286] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/my-app/sr...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
+                        <RootLayout params={Promise}>
+                          <html lang="en">
+                            <body
+                              sx={{Margin:0,Padding:0}}
+-                             data-new-gr-c-s-check-loaded="14.1267.0"
+-                             data-gr-ext-installed=""
+                            >
+                  ...
+
+[02:23:26.142] Server  LOG      ✓ Compiled in 486ms
+[02:23:27.976] Server  LOG      ✓ Compiled in 698ms
+[02:23:28.489] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:58:11
+Parsing ecmascript source code failed
+  56 |           p: 4,
+  57 |           px
+> 58 |           border: "1px solid #e0e0e0",
+     |           ^^^^^^
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+  61 |       >
+
+Expected '</', got 'border'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:23:31.490] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:58:11
+Parsing ecmascript source code failed
+  56 |           p: 4,
+  57 |           pt
+> 58 |           border: "1px solid #e0e0e0",
+     |           ^^^^^^
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+  61 |       >
+
+Expected '</', got 'border'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:23:35.490] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:58:11
+Parsing ecmascript source code failed
+  56 |           p: 4,
+  57 |           pt:{}
+> 58 |           border: "1px solid #e0e0e0",
+     |           ^^^^^^
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+  61 |       >
+
+Expected '</', got 'border'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:23:37.087] Server  LOG      ✓ Compiled in 43ms
+[02:23:37.488] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:57:18
+Parsing ecmascript source code failed
+  55 |           textAlign: "center",
+  56 |           p: 4,
+> 57 |           pt:{xs:}
+     |                  ^
+  58 |           border: "1px solid #e0e0e0",
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:23:38.963] Server  LOG      ✓ Compiled in 40ms
+[02:23:39.490] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:57:20
+Parsing ecmascript source code failed
+  55 |           textAlign: "center",
+  56 |           p: 4,
+> 57 |           pt:{xs:10px}
+     |                    ^^
+  58 |           border: "1px solid #e0e0e0",
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+
+Expected '</', got 'px'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:23:42.482] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:57:20
+Parsing ecmascript source code failed
+  55 |           textAlign: "center",
+  56 |           p: 4,
+> 57 |           pt:{xs:10px},
+     |                    ^^
+  58 |           border: "1px solid #e0e0e0",
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+
+Expected '</', got 'px'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:23:44.928] Server  LOG      ✓ Compiled in 94ms
+[02:23:57.035] Server  LOG      ✓ Compiled in 101ms
+[02:24:06.065] Server  LOG      ✓ Compiled in 32ms
+[02:24:07.218] Server  LOG      ✓ Compiled in 26ms
+[02:24:21.996] Server  LOG      ✓ Compiled in 31ms
+[02:25:08.767] Server  LOG      ✓ Compiled in 49ms
+[02:25:09.486] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:58:11
+Parsing ecmascript source code failed
+  56 |           p: 4,
+  57 |          gap
+> 58 |           border: "1px solid #e0e0e0",
+     |           ^^^^^^
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+  61 |       >
+
+Expected '</', got 'border'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:25:12.474] Server  LOG      ✓ Compiled in 544ms
+[02:25:13.488] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:58:17
+Parsing ecmascript source code failed
+  56 |           p: 4,
+  57 |          gap:
+> 58 |           border: "1px solid #e0e0e0",
+     |                 ^
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+  61 |       >
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:25:14.490] Server  LOG      ✓ Compiled in 237ms
+[02:25:15.496] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:58:11
+Parsing ecmascript source code failed
+  56 |           p: 4,
+  57 |          gap:3
+> 58 |           border: "1px solid #e0e0e0",
+     |           ^^^^^^
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+  61 |       >
+
+Expected '</', got 'border'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:25:24.655] Server  LOG      ✓ Compiled in 30ms
+[02:25:48.093] Server  LOG      ✓ Compiled in 61ms
+[02:25:48.485] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:58:11
+Parsing ecmascript source code failed
+  56 |           p: 4,
+  57 |          mt
+> 58 |           border: "1px solid #e0e0e0",
+     |           ^^^^^^
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+  61 |       >
+
+Expected '</', got 'border'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:25:49.246] Server  LOG      ✓ Compiled in 37ms
+[02:25:49.493] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:58:17
+Parsing ecmascript source code failed
+  56 |           p: 4,
+  57 |          mt:
+> 58 |           border: "1px solid #e0e0e0",
+     |                 ^
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+  61 |       >
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:25:51.305] Server  LOG      ✓ Compiled in 145ms
+[02:25:51.493] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:58:11
+Parsing ecmascript source code failed
+  56 |           p: 4,
+  57 |          mt:5
+> 58 |           border: "1px solid #e0e0e0",
+     |           ^^^^^^
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+  61 |       >
+
+Expected '</', got 'border'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:26:06.356] Server  LOG      ✓ Compiled in 80ms
+[02:26:06.483] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:57:15
+Parsing ecmascript source code failed
+  55 |           textAlign: "center",
+  56 |           p: 4,
+> 57 |          mt:{}5,
+     |               ^
+  58 |           border: "1px solid #e0e0e0",
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+
+Expected '</', got 'numeric literal (5, 5)'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:26:09.008] Server  LOG      ✓ Compiled in 53ms
+[02:26:09.486] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:58:11
+Parsing ecmascript source code failed
+  56 |           p: 4,
+  57 |          mt:{}
+> 58 |           border: "1px solid #e0e0e0",
+     |           ^^^^^^
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+  61 |       >
+
+Expected '</', got 'border'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:26:12.487] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:58:11
+Parsing ecmascript source code failed
+  56 |           p: 4,
+  57 |          mt:{xs}
+> 58 |           border: "1px solid #e0e0e0",
+     |           ^^^^^^
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+  61 |       >
+
+Expected '</', got 'border'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:26:13.381] Server  LOG      ✓ Compiled in 222ms
+[02:26:13.493] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:57:17
+Parsing ecmascript source code failed
+  55 |           textAlign: "center",
+  56 |           p: 4,
+> 57 |          mt:{xs:}
+     |                 ^
+  58 |           border: "1px solid #e0e0e0",
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:26:16.549] Server  LOG      ✓ Compiled in 28ms
+[02:26:17.488] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:58:11
+Parsing ecmascript source code failed
+  56 |           p: 4,
+  57 |          mt:{xs:"5"}
+> 58 |           border: "1px solid #e0e0e0",
+     |           ^^^^^^
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+  61 |       >
+
+Expected '</', got 'border'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:26:19.495] Browser ERROR   ./my-app/src/component/FeaturedSection/BottomCards.js:58:11
+Parsing ecmascript source code failed
+  56 |           p: 4,
+  57 |          mt:{xs:"5px"}
+> 58 |           border: "1px solid #e0e0e0",
+     |           ^^^^^^
+  59 |           fontFamily: "'Inter', sans-serif", // Inter font added
+  60 |         }}
+  61 |       >
+
+Expected '</', got 'border'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/FeaturedSection/BottomCards.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:26:20.563] Server  LOG      ✓ Compiled in 74ms
+[02:26:28.017] Server  LOG      ✓ Compiled in 33ms
+[02:26:45.651] Server  LOG      ✓ Compiled in 30ms
+[02:27:21.386] Server  LOG      ✓ Compiled in 27ms
+[02:27:23.215] Server  LOG      ✓ Compiled in 28ms
+[02:27:26.175] Server  LOG      ✓ Compiled in 26ms
+[02:27:40.788] Server  LOG      ✓ Compiled in 37ms
+[02:28:25.210] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+[02:28:25.212] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:28:25.214] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:28:25.454] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:28:27.842] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:29.348] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+[02:28:29.349] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:28:29.349] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:28:29.615] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:28:32.186] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/my-app/sr...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
+                        <RootLayout params={Promise}>
+                          <html lang="en">
+                            <body
+                              sx={{Margin:0,Padding:0}}
+-                             data-new-gr-c-s-check-loaded="14.1267.0"
+-                             data-gr-ext-installed=""
+                            >
+                  ...
+
+[02:31:00.168] Server  LOG      ✓ Compiled in 1361ms
+[02:31:00.485] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:458:39
+Parsing ecmascript source code failed
+  456 |             startIcon={<Search sx={{ height: 40, pl: "12px", py: "5px" }} />}
+  457 |             sx={{
+> 458 |               width: { xs: "238px",md lg: "40px" },
+      |                                       ^^
+  459 |               alignItems: "center",
+  460 |               height: 40,
+  461 |               margin: "auto",
+
+Expected '</', got 'lg'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:31:00.531] Server  LOG      ✓ Compiled in 137ms
+[02:31:01.481] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:458:42
+Parsing ecmascript source code failed
+  456 |             startIcon={<Search sx={{ height: 40, pl: "12px", py: "5px" }} />}
+  457 |             sx={{
+> 458 |               width: { xs: "238px",md: lg: "40px" },
+      |                                          ^
+  459 |               alignItems: "center",
+  460 |               height: 40,
+  461 |               margin: "auto",
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:31:02.364] Server  LOG      ✓ Compiled in 62ms
+[02:31:02.494] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:458:42
+Parsing ecmascript source code failed
+  456 |             startIcon={<Search sx={{ height: 40, pl: "12px", py: "5px" }} />}
+  457 |             sx={{
+> 458 |               width: { xs: "238px",md:"" lg: "40px" },
+      |                                          ^^
+  459 |               alignItems: "center",
+  460 |               height: 40,
+  461 |               margin: "auto",
+
+Expected '</', got 'lg'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:31:09.489] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:458:47
+Parsing ecmascript source code failed
+  456 |             startIcon={<Search sx={{ height: 40, pl: "12px", py: "5px" }} />}
+  457 |             sx={{
+> 458 |               width: { xs: "238px",md:"100px" lg: "40px" },
+      |                                               ^^
+  459 |               alignItems: "center",
+  460 |               height: 40,
+  461 |               margin: "auto",
+
+Expected '</', got 'lg'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:31:11.085] Server  LOG      ✓ Compiled in 222ms
+[02:31:21.137] Server  LOG      ✓ Compiled in 92ms
+[02:31:48.411] Server  LOG      ✓ Compiled in 122ms
+[02:31:49.491] Browser ERROR   ./my-app/src/component/HeroSection/components/TravellersDropDown.js:88:32
+Parsing ecmascript source code failed
+  86 |           fontSize: "12px",
+  87 |           color: "#000",
+> 88 |           width: { xs: 238 ,md lg:160}, // xs = extra small = mobile
+     |                                ^^
+  89 |           borderColor: "#c0c0c0",
+  90 |           justifyContent: "space-between",
+  91 |           textTransform: "none",
+
+Expected '</', got 'lg'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:31:49.984] Server  LOG      ✓ Compiled in 94ms
+[02:31:50.493] Browser ERROR   ./my-app/src/component/HeroSection/components/TravellersDropDown.js:88:35
+Parsing ecmascript source code failed
+  86 |           fontSize: "12px",
+  87 |           color: "#000",
+> 88 |           width: { xs: 238 ,md: lg:160}, // xs = extra small = mobile
+     |                                   ^
+  89 |           borderColor: "#c0c0c0",
+  90 |           justifyContent: "space-between",
+  91 |           textTransform: "none",
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:31:53.677] Server  LOG      ✓ Compiled in 64ms
+[02:31:54.480] Browser ERROR   ./my-app/src/component/HeroSection/components/TravellersDropDown.js:88:36
+Parsing ecmascript source code failed
+  86 |           fontSize: "12px",
+  87 |           color: "#000",
+> 88 |           width: { xs: 238 ,md:300 lg:160}, // xs = extra small = mobile
+     |                                    ^^
+  89 |           borderColor: "#c0c0c0",
+  90 |           justifyContent: "space-between",
+  91 |           textTransform: "none",
+
+Expected '</', got 'lg'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:32:01.398] Server  LOG      ✓ Compiled in 75ms
+[02:32:07.794] Server  LOG      ✓ Compiled in 42ms
+[02:32:15.395] Server  LOG      ✓ Compiled in 57ms
+[02:32:16.957] Server  LOG      ✓ Compiled in 60ms
+[02:32:47.064] Server  LOG      ✓ Compiled in 68ms
+[02:32:53.330] Server  LOG      ✓ Compiled in 66ms
+[02:32:54.939] Server  LOG      ✓ Compiled in 54ms
+[02:33:02.058] Server  LOG      ✓ Compiled in 47ms
+[02:33:08.543] Server  LOG      ✓ Compiled in 77ms
+[02:33:09.491] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:458:40
+Parsing ecmascript source code failed
+  456 |             startIcon={<Search sx={{ height: 40, pl: "12px", py: "5px" }} />}
+  457 |             sx={{
+> 458 |               width: { xs: "238px", md lg: "40px" },
+      |                                        ^^
+  459 |               alignItems: "center",
+  460 |               height: 40,
+  461 |               margin: "auto",
+
+Expected '</', got 'lg'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:33:12.487] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:458:43
+Parsing ecmascript source code failed
+  456 |             startIcon={<Search sx={{ height: 40, pl: "12px", py: "5px" }} />}
+  457 |             sx={{
+> 458 |               width: { xs: "238px", md:"" lg: "40px" },
+      |                                           ^^
+  459 |               alignItems: "center",
+  460 |               height: 40,
+  461 |               margin: "auto",
+
+Expected '</', got 'lg'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:33:14.486] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:458:44
+Parsing ecmascript source code failed
+  456 |             startIcon={<Search sx={{ height: 40, pl: "12px", py: "5px" }} />}
+  457 |             sx={{
+> 458 |               width: { xs: "238px", md:"0" lg: "40px" },
+      |                                            ^^
+  459 |               alignItems: "center",
+  460 |               height: 40,
+  461 |               margin: "auto",
+
+Expected '</', got 'lg'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:33:57.745] Server  LOG      ✓ Compiled in 56ms
+[02:33:59.740] Server  LOG      ✓ Compiled in 57ms
+[02:34:08.455] Server  LOG      ✓ Compiled in 65ms
+[02:34:13.373] Server  LOG      ✓ Compiled in 45ms
+[02:34:41.064] Server  LOG      ✓ Compiled in 42ms
+[02:34:56.083] Server  LOG      ✓ Compiled in 54ms
+[02:35:21.519] Server  LOG      ✓ Compiled in 47ms
+[02:35:36.507] Server  LOG      ✓ Compiled in 62ms
+[02:35:37.487] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:359:35
+Parsing ecmascript source code failed
+  357 |             width: { xs: "100%", md: 200 },
+  358 |             flexDirection: { xs: "column", md: "row" },
+> 359 |             mt: { xs: "5px",md:"" lg: "0.4px" }
+      |                                   ^^
+  360 |           }}
+  361 |         >
+  362 |           {/* Depart Date */}
+
+Expected '</', got 'lg'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:35:40.481] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:359:36
+Parsing ecmascript source code failed
+  357 |             width: { xs: "100%", md: 200 },
+  358 |             flexDirection: { xs: "column", md: "row" },
+> 359 |             mt: { xs: "5px",md:"4" lg: "0.4px" }
+      |                                    ^^
+  360 |           }}
+  361 |         >
+  362 |           {/* Depart Date */}
+
+Expected '</', got 'lg'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:35:41.484] Browser ERROR   ./my-app/src/component/HeroSection/components/FlightSearchForm.js:359:38
+Parsing ecmascript source code failed
+  357 |             width: { xs: "100%", md: 200 },
+  358 |             flexDirection: { xs: "column", md: "row" },
+> 359 |             mt: { xs: "5px",md:"4px" lg: "0.4px" }
+      |                                      ^^
+  360 |           }}
+  361 |         >
+  362 |           {/* Depart Date */}
+
+Expected '</', got 'lg'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/FlightSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:35:44.471] Server  LOG      ✓ Compiled in 117ms
+[02:35:53.781] Server  LOG      ✓ Compiled in 56ms
+[02:35:59.537] Server  LOG      ✓ Compiled in 63ms
+[02:36:06.300] Server  LOG      ✓ Compiled in 52ms
+[02:36:13.520] Server  LOG      ✓ Compiled in 104ms
+[02:36:26.020] Server  LOG      ✓ Compiled in 49ms
+[02:42:08.807] Server  LOG      ✓ Compiled in 247ms
+[02:42:15.378] Server  LOG      ✓ Compiled in 66ms
+[02:43:41.696] Server  LOG      ✓ Compiled in 714ms
+[02:43:42.509] Browser ERROR   ./my-app/src/component/HeroSection/components/CarSearchForm.js:251:27
+Parsing ecmascript source code failed
+  249 |       {isMobile ? (
+  250 |         // Mobile Layout - Stacked Columns
+> 251 |         <Stack spacing={} sx={{ p: 2 }}>
+      |                           ^^
+  252 |           {/* Pick-Up Date */}
+  253 |           <TextField
+  254 |             fullWidth
+
+Expected '</', got 'sx'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:43:43.271] Server  LOG      ✓ Compiled in 214ms
+[02:43:55.546] Server  LOG      ✓ Compiled in 71ms
+[02:44:14.134] Server  LOG      ✓ Compiled in 137ms
+[02:44:19.266] Server  LOG      ✓ Compiled in 43ms
+[02:44:25.582] Server  LOG      ✓ Compiled in 62ms
+[02:44:32.246] Server  LOG      ✓ Compiled in 63ms
+[02:47:09.049] Server  LOG      ✓ Compiled in 82ms
+[02:47:11.195] Server  LOG      ✓ Compiled in 65ms
+[02:47:19.244] Server  LOG      ✓ Compiled in 39ms
+[02:47:21.935] Server  LOG      ✓ Compiled in 51ms
+[02:47:23.257] Server  LOG      ✓ Compiled in 81ms
+[02:47:23.491] Browser ERROR   ./my-app/src/component/HeroSection/components/TravellersDropDown.js:88:34
+Parsing ecmascript source code failed
+  86 |           fontSize: "12px",
+  87 |           color: "#000",
+> 88 |           width: { xs: 238 ,sm:md:170, lg:160}, // xs = extra small = mobile
+     |                                  ^
+  89 |           borderColor: "#c0c0c0",
+  90 |           justifyContent: "space-between",
+  91 |           textTransform: "none",
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:47:26.633] Server  LOG      ✓ Compiled in 47ms
+[02:47:27.485] Browser ERROR   ./my-app/src/component/HeroSection/components/TravellersDropDown.js:88:35
+Parsing ecmascript source code failed
+  86 |           fontSize: "12px",
+  87 |           color: "#000",
+> 88 |           width: { xs: 238 ,sm:100md:170, lg:160}, // xs = extra small = mobile
+     |                                   ^^
+  89 |           borderColor: "#c0c0c0",
+  90 |           justifyContent: "space-between",
+  91 |           textTransform: "none",
+
+Expected '</', got 'md'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:47:59.472] Server  LOG      ✓ Compiled in 116ms
+[02:48:00.495] Browser ERROR   ./my-app/src/component/HeroSection/components/TravellersDropDown.js:88:40
+Parsing ecmascript source code failed
+  86 |           fontSize: "12px",
+  87 |           color: "#000",
+> 88 |           width: { xs: 238 ,sm:"100px" md:170, lg:160}, // xs = extra small = mobile
+     |                                        ^^
+  89 |           borderColor: "#c0c0c0",
+  90 |           justifyContent: "space-between",
+  91 |           textTransform: "none",
+
+Expected '</', got 'md'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:48:10.755] Server  LOG      ✓ Compiled in 116ms
+[02:48:11.491] Browser ERROR   ./my-app/src/component/HeroSection/components/TravellersDropDown.js:88:35
+Parsing ecmascript source code failed
+  86 |           fontSize: "12px",
+  87 |           color: "#000",
+> 88 |           width: { xs: 238, small md:170, lg:160}, // xs = extra small = mobile
+     |                                   ^^
+  89 |           borderColor: "#c0c0c0",
+  90 |           justifyContent: "space-between",
+  91 |           textTransform: "none",
+
+Expected '</', got 'md'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:48:12.950] Server  LOG      ✓ Compiled in 73ms
+[02:48:13.487] Browser ERROR   ./my-app/src/component/HeroSection/components/TravellersDropDown.js:88:39
+Parsing ecmascript source code failed
+  86 |           fontSize: "12px",
+  87 |           color: "#000",
+> 88 |           width: { xs: 238, small:  md:170, lg:160}, // xs = extra small = mobile
+     |                                       ^
+  89 |           borderColor: "#c0c0c0",
+  90 |           justifyContent: "space-between",
+  91 |           textTransform: "none",
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:48:16.191] Server  LOG      ✓ Compiled in 153ms
+[02:48:25.015] Server  LOG      ✓ Compiled in 45ms
+[02:48:34.094] Server  LOG      ✓ Compiled in 61ms
+[02:49:11.357] Server  LOG      ✓ Compiled in 62ms
+[02:49:21.386] Server  LOG      ✓ Compiled in 70ms
+[02:49:24.449] Server  LOG      ✓ Compiled in 48ms
+[02:49:36.966] Server  LOG      ✓ Compiled in 67ms
+[02:50:46.059] Server  LOG      ✓ Compiled in 723ms
+[02:50:46.482] Browser ERROR   ./my-app/src/component/HeroSection/components/TravellersDropDown.js:88:31
+Parsing ecmascript source code failed
+  86 |           fontSize: "12px",
+  87 |           color: "#000",
+> 88 |           width: { xs: 238,sm md:170, lg:160}, 
+     |                               ^^
+  89 |           borderColor: "#c0c0c0",
+  90 |           justifyContent: "space-between",
+  91 |           textTransform: "none",
+
+Expected '</', got 'md'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:50:47.116] Server  LOG      ✓ Compiled in 58ms
+[02:50:47.487] Browser ERROR   ./my-app/src/component/HeroSection/components/TravellersDropDown.js:88:34
+Parsing ecmascript source code failed
+  86 |           fontSize: "12px",
+  87 |           color: "#000",
+> 88 |           width: { xs: 238,sm: md:170, lg:160}, 
+     |                                  ^
+  89 |           borderColor: "#c0c0c0",
+  90 |           justifyContent: "space-between",
+  91 |           textTransform: "none",
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/TravellersDropDown.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/components/CarSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[02:50:50.412] Server  LOG      ✓ Compiled in 91ms
+[02:51:02.158] Server  LOG      ✓ Compiled in 82ms
+[02:51:15.922] Server  LOG      ✓ Compiled in 58ms
+[02:51:33.610] Server  LOG      ✓ Compiled in 61ms
+[02:51:39.763] Server  WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+[02:51:39.764] Server  WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:51:39.766] Server  WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:51:40.009] Server  WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:51:42.807] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:51:44.977] Browser WARN    MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+[02:51:44.978] Browser WARN    MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:51:44.978] Browser WARN    MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:51:45.325] Browser WARN    MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+[02:51:47.056] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/my-app/sr...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
+                        <RootLayout params={Promise}>
+                          <html lang="en">
+                            <body
+                              sx={{Margin:0,Padding:0}}
+-                             data-new-gr-c-s-check-loaded="14.1267.0"
+-                             data-gr-ext-installed=""
+                            >
+                  ...
+
+[02:51:59.562] Server  LOG      ✓ Compiled in 823ms
+[03:06:25.599] Server  LOG      ✓ Compiled in 1214ms
+[03:06:26.495] Browser ERROR   ./my-app/src/component/HeroSection/components/VisaSearchForm.js:204:33
+Parsing ecmascript source code failed
+  202 |               height: 40, // Height 40px
+  203 |               minHeight: 40, // Ensure minimum height
+> 204 |               width:{xs:"238px" md,lg:"40px"},
+      |                                 ^^
+  205 |          pl:3
+  206 |             }}
+  207 |             startIcon={<Search />}
+
+Expected '</', got 'md'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/VisaSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/VisaSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[03:06:26.495] Browser ERROR   ./my-app/src/component/HeroSection/components/VisaSearchForm.js:204:33
+Parsing ecmascript source code failed
+  202 |               height: 40, // Height 40px
+  203 |               minHeight: 40, // Ensure minimum height
+> 204 |               width:{xs:"238px" md,lg:"40px"},
+      |                                 ^^
+  205 |          pl:3
+  206 |             }}
+  207 |             startIcon={<Search />}
+
+Expected '</', got 'md'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/VisaSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/VisaSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[03:06:27.491] Browser ERROR   ./my-app/src/component/HeroSection/components/VisaSearchForm.js:204:33
+Parsing ecmascript source code failed
+  202 |               height: 40, // Height 40px
+  203 |               minHeight: 40, // Ensure minimum height
+> 204 |               width:{xs:"238px" md:"",lg:"40px"},
+      |                                 ^^
+  205 |          pl:3
+  206 |             }}
+  207 |             startIcon={<Search />}
+
+Expected '</', got 'md'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/VisaSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/VisaSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[03:06:29.492] Browser ERROR   ./my-app/src/component/HeroSection/components/VisaSearchForm.js:204:33
+Parsing ecmascript source code failed
+  202 |               height: 40, // Height 40px
+  203 |               minHeight: 40, // Ensure minimum height
+> 204 |               width:{xs:"238px" md:"2",lg:"40px"},
+      |                                 ^^
+  205 |          pl:3
+  206 |             }}
+  207 |             startIcon={<Search />}
+
+Expected '</', got 'md'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/VisaSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/VisaSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[03:06:31.491] Browser ERROR   ./my-app/src/component/HeroSection/components/VisaSearchForm.js:204:33
+Parsing ecmascript source code failed
+  202 |               height: 40, // Height 40px
+  203 |               minHeight: 40, // Ensure minimum height
+> 204 |               width:{xs:"238px" md:"1",lg:"40px"},
+      |                                 ^^
+  205 |          pl:3
+  206 |             }}
+  207 |             startIcon={<Search />}
+
+Expected '</', got 'md'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/VisaSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/VisaSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[03:06:32.494] Browser ERROR   ./my-app/src/component/HeroSection/components/VisaSearchForm.js:204:33
+Parsing ecmascript source code failed
+  202 |               height: 40, // Height 40px
+  203 |               minHeight: 40, // Ensure minimum height
+> 204 |               width:{xs:"238px" md:"150px",lg:"40px"},
+      |                                 ^^
+  205 |          pl:3
+  206 |             }}
+  207 |             startIcon={<Search />}
+
+Expected '</', got 'md'
+
+Import traces:
+  Client Component Browser:
+    ./my-app/src/component/HeroSection/components/VisaSearchForm.js [Client Component Browser]
+    ./my-app/src/component/HeroSection/index.js [Client Component Browser]
+    ./my-app/src/app/page.js [Client Component Browser]
+    ./my-app/src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./my-app/src/component/HeroSection/components/VisaSearchForm.js [Client Component SSR]
+    ./my-app/src/component/HeroSection/index.js [Client Component SSR]
+    ./my-app/src/app/page.js [Client Component SSR]
+    ./my-app/src/app/page.js [Server Component]
+[03:06:36.615] Server  LOG      ✓ Compiled in 302ms
+[03:06:43.729] Server  LOG      ✓ Compiled in 90ms
+[03:06:50.251] Server  LOG      ✓ Compiled in 42ms
+[04:49:01.766] Server  LOG      ✓ Compiled in 1020ms
+[04:49:02.282] Server  LOG      ✓ Compiled in 206ms
