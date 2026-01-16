@@ -1,6 +1,6 @@
 # Dependencies
 node_modules/
-
+src/backup/
 # Next.js build output
 .next/
 out/
