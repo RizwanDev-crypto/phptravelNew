@@ -1,21 +1,2 @@
 /* [project]/my-app/src/app/globals.css [app-client] (css) */
-::-webkit-calendar-picker-day {
-  color: #000;
-  background-color: #e3f2fd;
-}
-
-::-webkit-calendar-picker-day:hover {
-  background-color: #90caf9;
-}
-
-::-webkit-calendar-picker-day:active {
-  color: #fff;
-  background-color: #1976d2;
-}
-
-::-webkit-calendar-picker-day:disabled {
-  color: #9e9e9e;
-  background-color: #eee;
-}
-
-/*# sourceMappingURL=my-app_src_app_globals_css_bad6b30c._.single.css.map*/
+/* unparsable [project]/my-app/src/app/globals.css [app-client] (css) */

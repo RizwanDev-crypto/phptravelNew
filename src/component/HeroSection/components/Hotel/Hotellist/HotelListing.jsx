@@ -27,6 +27,7 @@ export default function HotelListing({ slug = [] }) {
     const checkOut = slug[2] || "";
     const adults = slug[3] || 2;
     const children = slug[4] || 0;
+    const nationality = slug[5] || "PK";
 
     const openSort = Boolean(anchorEl);
     const handleSortClick = (event) => setAnchorEl(event.currentTarget);

@@ -205,7 +205,7 @@ export default function FlightFilters({ flightCount = 3 }) {
           />
         }
         label={
-          <Typography sx={{ fontSize: "0.85rem", color: "#4B5563" }}>
+          <Typography component="span" sx={{ fontSize: "0.85rem", color: "#4B5563" }}>
             {item.label}
           </Typography>
         }
@@ -363,8 +363,8 @@ export default function FlightFilters({ flightCount = 3 }) {
                   />
                 }
                 label={
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 1, ml: 0.2 }}>
-                    <Box sx={{ 
+                  <Box component="span" sx={{ display: "flex", alignItems: "center", gap: 1, ml: 0.2 }}>
+                    <Box component="span" sx={{ 
                       width: 24, 
                       height: 24, 
                       borderRadius: 1, 
@@ -375,9 +375,9 @@ export default function FlightFilters({ flightCount = 3 }) {
                     }}>
                       {slot.icon}
                     </Box>
-                    <Box sx={{ display: "flex", flexDirection: "column" }}>
-                      <Typography sx={{ fontSize: "0.7rem", color: "#1F2937", fontWeight: 600, lineHeight: 1.5 }}>{slot.label}</Typography>
-                      <Typography sx={{ color: "#6B7280", fontSize: "0.6rem", lineHeight: 1.3 }}>{slot.time}</Typography>
+                    <Box component="span" sx={{ display: "flex", flexDirection: "column" }}>
+                      <Typography component="span" sx={{ fontSize: "0.7rem", color: "#1F2937", fontWeight: 600, lineHeight: 1.5, display: "block" }}>{slot.label}</Typography>
+                      <Typography component="span" sx={{ color: "#6B7280", fontSize: "0.6rem", lineHeight: 1.3, display: "block" }}>{slot.time}</Typography>
                     </Box>
                   </Box>
                 }
@@ -441,7 +441,7 @@ export default function FlightFilters({ flightCount = 3 }) {
                   />
                 }
                 label={
-                  <Typography sx={{ fontSize: "0.85rem", color: "#4B5563" }}>
+                  <Typography component="span" sx={{ fontSize: "0.85rem", color: "#4B5563" }}>
                     {item.label}
                   </Typography>
                 }

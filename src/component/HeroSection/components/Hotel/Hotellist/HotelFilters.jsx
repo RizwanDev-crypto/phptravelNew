@@ -42,7 +42,7 @@ const FilterSection = ({ title, icon, defaultOpen = true, children, hasDivider =
       >
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
           {icon && <Box sx={{ color: "#9CA3AF", display: "flex" }}>{icon}</Box>}
-          <Typography sx={{ fontWeight: 600, fontSize: "0.75rem", color: "#1F2937", fontFamily: "'Inter', sans-serif" }}>
+          <Typography component="div" sx={{ fontWeight: 600, fontSize: "0.75rem", color: "#1F2937", fontFamily: "'Inter', sans-serif" }}>
             {title}
           </Typography>
         </Box>
@@ -249,7 +249,7 @@ export default function HotelFilters({ hotelCount = 1 }) {
                     }}
                   />
                 }
-                label={<Typography sx={{ fontSize: "0.85rem", color: "#4B5563" }}>{type}</Typography>}
+                label={<Typography component="span" sx={{ fontSize: "0.85rem", color: "#4B5563" }}>{type}</Typography>}
                 sx={{ margin: 0 }}
               />
             </Box>
@@ -299,7 +299,7 @@ export default function HotelFilters({ hotelCount = 1 }) {
                     }}
                   />
                 }
-                label={<Typography sx={{ fontSize: "0.85rem", color: "#4B5563" }}>{star} Star</Typography>}
+                label={<Typography component="span" sx={{ fontSize: "0.85rem", color: "#4B5563" }}>{star} Star</Typography>}
                 sx={{ margin: 0 }}
               />
               <Typography sx={{ fontSize: "0.8rem", color: "#9CA3AF" }}>0</Typography>

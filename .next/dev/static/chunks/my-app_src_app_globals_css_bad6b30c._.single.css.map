@@ -1,6 +1,5 @@
 {
   "version": 3,
   "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/my-app/src/app/globals.css"],"sourcesContent":["/* ============================= */\n/* DATE PICKER SAFE CUSTOM CSS */\n/* ============================= */\n\n/* Upcoming dates */\n::-webkit-calendar-picker-day {\n  background-color: #e3f2fd;\n  color: #000;\n}\n\n/* Hover date */\n::-webkit-calendar-picker-day:hover {\n  background-color: #90caf9;\n}\n\n/* Clicked / active date */\n::-webkit-calendar-picker-day:active {\n  background-color: #1976d2;\n  color: #fff;\n}\n\n/* Disabled dates (past) */\n::-webkit-calendar-picker-day:disabled {\n  background-color: #eeeeee;\n  color: #9e9e9e;\n\n}\n\n\n"],"names":[],"mappings":"AAKA;;;;;AAMA;;;;AAKA;;;;;AAMA"}}]
+  "sections": []
 }

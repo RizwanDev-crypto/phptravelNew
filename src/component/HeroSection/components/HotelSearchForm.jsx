@@ -265,6 +265,7 @@ const HotelSearchForm = ({ calendarWidth = { xs: "100%", md: 350, lg: 345 } }) =
   const [travellers, setTravellers] = useState({ adults: 2, children: 0, infants: 0 });
   const [checkInDate, setCheckInDate] = useState("");
   const [checkOutDate, setCheckOutDate] = useState("");
+  const [nationalityCode, setNationalityCode] = useState("PK");
   
   const router = useRouter();
   const { setHotelSearchData } = useGlobalContext();
@@ -319,13 +320,14 @@ const HotelSearchForm = ({ calendarWidth = { xs: "100%", md: 350, lg: 345 } }) =
       checkIn: checkInDate,
       checkOut: checkOutDate,
       travellers,
+      nationalityCode,
     };
 
     setHotelSearchData(searchData);
     localStorage.setItem("hotelSearchData", JSON.stringify(searchData));
 
     // Navigate to hotel listing route
-    router.push(`/hotels/${citySearch}/${checkInDate}/${checkOutDate}/${travellers.adults}/${travellers.children}`);
+    router.push(`/hotels/${citySearch}/${checkInDate}/${checkOutDate}/${travellers.adults}/${travellers.children}/${nationalityCode}`);
   };
 
   return (
@@ -488,6 +490,8 @@ const HotelSearchForm = ({ calendarWidth = { xs: "100%", md: 350, lg: 345 } }) =
             <TravellersDropdown 
               travellers={travellers} 
               onTravellersChange={setTravellers}
+              nationalityCode={nationalityCode}
+              onNationalityChange={setNationalityCode}
               mode="hotel"
               sx={{
                 fontFamily: "'Inter', sans-serif",
@@ -684,6 +688,8 @@ const HotelSearchForm = ({ calendarWidth = { xs: "100%", md: 350, lg: 345 } }) =
             <TravellersDropdown
               travellers={travellers}
               onTravellersChange={setTravellers}
+              nationalityCode={nationalityCode}
+              onNationalityChange={setNationalityCode}
               mode="hotel"
               sx={{
                 minWidth: {sm: 429, md: 180, lg: 180},
